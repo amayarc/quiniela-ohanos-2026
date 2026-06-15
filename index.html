@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Quiniela OHANOS — Mundial 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="title-block">
+        <span class="ball">⚽</span>
+        <div>
+          <h1>Quiniela OHANOS</h1>
+          <p class="subtitle">Mundial 2026 · Fase de Grupos</p>
+        </div>
+      </div>
+      <div class="status-pills">
+        <span class="pill" id="pill-jugados">— jugados</span>
+        <span class="pill" id="pill-participantes">— participantes</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="clasificacion">🏆 Clasificación</button>
+    <button class="tab" data-tab="partidos">📅 Partidos</button>
+    <button class="tab" data-tab="por-persona">👤 Por persona</button>
+    <button class="tab" data-tab="campeon">🏆 Campeón</button>
+    <button class="tab" data-tab="goleador">⚽ Goleador</button>
+    <button class="tab" data-tab="reglas">📋 Reglas</button>
+    <button class="tab" data-tab="capturar">🔐 Capturar</button>
+  </nav>
+
+  <main>
+    <!-- Clasificación -->
+    <section id="tab-clasificacion" class="tab-content active">
+      <h2>Clasificación general</h2>
+      <p class="updated" id="updated-text"></p>
+      <div id="clasif-podium" class="podium"></div>
+      <div class="table-wrap">
+        <table class="rank-table">
+          <thead>
+            <tr>
+              <th>Pos</th>
+              <th>Participante</th>
+              <th>Total</th>
+              <th class="hide-mobile">Partidos</th>
+              <th class="hide-mobile">Bonus</th>
+              <th class="hide-mobile">✅</th>
+              <th class="hide-mobile">❌</th>
+            </tr>
+          </thead>
+          <tbody id="clasif-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Partidos -->
+    <section id="tab-partidos" class="tab-content">
+      <h2>Partidos</h2>
+      <div class="filter-row">
+        <label>Día:
+          <select id="filtro-dia">
+            <option value="">Todos</option>
+          </select>
+        </label>
+      </div>
+      <div id="partidos-list"></div>
+    </section>
+
+    <!-- Por persona -->
+    <section id="tab-por-persona" class="tab-content">
+      <h2>Quiniela por participante</h2>
+      <div class="filter-row">
+        <label>Participante:
+          <select id="select-persona"></select>
+        </label>
+      </div>
+      <div id="persona-detalle"></div>
+    </section>
+
+    <!-- Campeón -->
+    <section id="tab-campeon" class="tab-content">
+      <div class="hero-bonus hero-blue">
+        <div class="hero-deco-l">⚽</div>
+        <div class="hero-deco-r">🏆</div>
+        <div class="hero-title">¿Quién será el</div>
+        <h2 class="hero-h2">CAMPEÓN <span class="hero-h2-sub">del Mundial 2026?</span></h2>
+        <p class="hero-sub">🏆 BONUS · 10 PTS</p>
+      </div>
+      <div id="campeon-pie" class="pie-block"></div>
+      <div id="campeon-detalle"></div>
+    </section>
+
+    <!-- Goleador -->
+    <section id="tab-goleador" class="tab-content">
+      <div class="hero-bonus hero-orange">
+        <div class="hero-deco-r">⚽</div>
+        <div class="hero-title">¿Quién será el</div>
+        <h2 class="hero-h2">MÁXIMO GOLEADOR <span class="hero-h2-sub">del Mundial 2026?</span></h2>
+        <p class="hero-sub">⚽ BONUS · 5 PTS</p>
+      </div>
+      <div id="goleador-podium" class="goleador-podium"></div>
+      <div id="goleador-resto" class="goleador-resto"></div>
+    </section>
+
+    <!-- Reglas -->
+    <section id="tab-reglas" class="tab-content">
+      <h2>Reglas</h2>
+      <div class="reglas-grid">
+        <div class="regla-card">
+          <h3>✅ Ganador correcto</h3>
+          <p class="big">2 pts</p>
+          <p>Aciertas quién gana (Local, Empate o Visitante).</p>
+        </div>
+        <div class="regla-card">
+          <h3>❌ Resultado equivocado</h3>
+          <p class="big">0 pts</p>
+          <p>Si te equivocas o no llenas el partido.</p>
+        </div>
+        <div class="regla-card">
+          <h3>🏆 Bonus campeón</h3>
+          <p class="big">10 pts</p>
+          <p>Aciertas el equipo campeón del Mundial.</p>
+        </div>
+        <div class="regla-card">
+          <h3>⚽ Bonus goleador</h3>
+          <p class="big">5 pts</p>
+          <p>Aciertas el máximo goleador del Mundial.</p>
+        </div>
+        <div class="regla-card">
+          <h3>⏱️ Tiempo reglamentario</h3>
+          <p>A partir de octavos cuenta el resultado al final de los 90 min + tiempo de compensación. No cuentan tiempos extra ni penales.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capturar -->
+    <section id="tab-capturar" class="tab-content">
+      <h2>🔐 Capturar resultados</h2>
+      <p class="info">Solo la organizadora tiene la clave. Aquí se ingresan los ganadores reales de los partidos.</p>
+
+      <div id="capturar-login">
+        <div class="login-card">
+          <div class="login-icon">🔒</div>
+          <h3>Acceso restringido</h3>
+          <p>Ingresa la clave</p>
+          <input type="password" id="login-pass" placeholder="Clave" autocomplete="off">
+          <button class="btn-primary" id="login-btn">Entrar</button>
+          <p class="login-error" id="login-error"></p>
+        </div>
+      </div>
+
+      <div id="capturar-panel" style="display:none;">
+        <div class="capt-instructions">
+          <p><strong>Cómo usar:</strong></p>
+          <ol>
+            <li>Marca el ganador de cada partido jugado (Local, Empate o Visitante)</li>
+            <li>Al final del Mundial, llena Campeón y Goleador reales</li>
+            <li>Click <strong>"💾 Guardar en la nube"</strong> y listo</li>
+            <li>La web se actualiza para todos en segundos</li>
+          </ol>
+        </div>
+
+        <div class="capt-section">
+          <h3>🏆 Bonus final del Mundial</h3>
+          <div class="capt-bonus-grid">
+            <div>
+              <label>Campeón real</label>
+              <input type="text" id="capt-campeon" placeholder="Ej: España">
+            </div>
+            <div>
+              <label>Máximo goleador real</label>
+              <input type="text" id="capt-goleador" placeholder="Ej: Kylian Mbappé">
+            </div>
+          </div>
+        </div>
+
+        <div class="capt-section">
+          <h3>📅 Resultados de partidos</h3>
+          <div class="filter-row">
+            <label>Mostrar:
+              <select id="capt-filtro">
+                <option value="hoy">📍 Solo HOY</option>
+                <option value="todos">Todos</option>
+                <option value="pendientes">Solo sin capturar</option>
+              </select>
+            </label>
+          </div>
+          <div id="capt-partidos-list"></div>
+        </div>
+
+        <div class="capt-actions">
+          <button class="btn-primary" id="btn-save">💾 Guardar en la nube</button>
+          <button class="btn-secondary" id="btn-download">⬇️ Backup JSON</button>
+          <button class="btn-secondary" id="btn-logout">Salir</button>
+        </div>
+        <p id="save-msg" class="save-msg"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Quiniela OHANOS · Mundial 2026 · Organiza: Amaya</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

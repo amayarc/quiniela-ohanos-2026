@@ -1,0 +1,7147 @@
+{
+  "meta": {
+    "nombre": "Quiniela OHANOS",
+    "fase": "Fase de Grupos",
+    "total_participantes": 13,
+    "total_partidos": 72,
+    "partidos_jugados": 10,
+    "campeon_real": null,
+    "goleador_real": null
+  },
+  "participantes": [
+    {
+      "slot": 1,
+      "nombre": "El Viso"
+    },
+    {
+      "slot": 2,
+      "nombre": "Fer Creel"
+    },
+    {
+      "slot": 3,
+      "nombre": "Javi"
+    },
+    {
+      "slot": 4,
+      "nombre": "Jimena"
+    },
+    {
+      "slot": 5,
+      "nombre": "Andy Ibarra"
+    },
+    {
+      "slot": 6,
+      "nombre": "Amaya"
+    },
+    {
+      "slot": 7,
+      "nombre": "Emanator"
+    },
+    {
+      "slot": 8,
+      "nombre": "Cas"
+    },
+    {
+      "slot": 9,
+      "nombre": "Lucia"
+    },
+    {
+      "slot": 10,
+      "nombre": "Simona"
+    },
+    {
+      "slot": 11,
+      "nombre": "Luigi"
+    },
+    {
+      "slot": 12,
+      "nombre": "Ohano #3"
+    },
+    {
+      "slot": 13,
+      "nombre": "Ximena"
+    }
+  ],
+  "partidos": [
+    {
+      "num": 1,
+      "grupo": "Grupo A",
+      "fecha": "Jue 11 Jun",
+      "fecha_iso": "2026-06-11",
+      "hora": "13:00",
+      "estadio": "Estadio Ciudad de México",
+      "local": "México",
+      "visitante": "Sudáfrica",
+      "ganador_real": "México",
+      "jugado": true
+    },
+    {
+      "num": 2,
+      "grupo": "Grupo A",
+      "fecha": "Jue 11 Jun",
+      "fecha_iso": "2026-06-11",
+      "hora": "20:00",
+      "estadio": "Estadio Guadalajara",
+      "local": "República de Corea",
+      "visitante": "República Checa",
+      "ganador_real": "República de Corea",
+      "jugado": true
+    },
+    {
+      "num": 3,
+      "grupo": "Grupo B",
+      "fecha": "Vie 12 Jun",
+      "fecha_iso": "2026-06-12",
+      "hora": "13:00",
+      "estadio": "Estadio Toronto",
+      "local": "Canadá",
+      "visitante": "Bosnia y Herzegovina",
+      "ganador_real": "Empate",
+      "jugado": true
+    },
+    {
+      "num": 4,
+      "grupo": "Grupo D",
+      "fecha": "Vie 12 Jun",
+      "fecha_iso": "2026-06-12",
+      "hora": "19:00",
+      "estadio": "Estadio Los Ángeles",
+      "local": "Estados Unidos",
+      "visitante": "Paraguay",
+      "ganador_real": "Estados Unidos",
+      "jugado": true
+    },
+    {
+      "num": 5,
+      "grupo": "Grupo D",
+      "fecha": "Vie 12 Jun",
+      "fecha_iso": "2026-06-12",
+      "hora": "22:00",
+      "estadio": "BC Place Vancouver",
+      "local": "Australia",
+      "visitante": "Turquía",
+      "ganador_real": "Australia",
+      "jugado": true
+    },
+    {
+      "num": 6,
+      "grupo": "Grupo B",
+      "fecha": "Sáb 13 Jun",
+      "fecha_iso": "2026-06-13",
+      "hora": "13:00",
+      "estadio": "Estadio San Francisco",
+      "local": "Catar",
+      "visitante": "Suiza",
+      "ganador_real": "Empate",
+      "jugado": true
+    },
+    {
+      "num": 7,
+      "grupo": "Grupo C",
+      "fecha": "Sáb 13 Jun",
+      "fecha_iso": "2026-06-13",
+      "hora": "16:00",
+      "estadio": "Estadio Nueva York/NJ",
+      "local": "Brasil",
+      "visitante": "Marruecos",
+      "ganador_real": "Empate",
+      "jugado": true
+    },
+    {
+      "num": 8,
+      "grupo": "Grupo C",
+      "fecha": "Sáb 13 Jun",
+      "fecha_iso": "2026-06-13",
+      "hora": "19:00",
+      "estadio": "Estadio Boston",
+      "local": "Haití",
+      "visitante": "Escocia",
+      "ganador_real": "Escocia",
+      "jugado": true
+    },
+    {
+      "num": 9,
+      "grupo": "Grupo E",
+      "fecha": "Dom 14 Jun",
+      "fecha_iso": "2026-06-14",
+      "hora": "11:00",
+      "estadio": "Estadio Houston",
+      "local": "Alemania",
+      "visitante": "Curazao",
+      "ganador_real": "Alemania",
+      "jugado": true
+    },
+    {
+      "num": 10,
+      "grupo": "Grupo F",
+      "fecha": "Dom 14 Jun",
+      "fecha_iso": "2026-06-14",
+      "hora": "14:00",
+      "estadio": "Estadio Dallas",
+      "local": "Países Bajos",
+      "visitante": "Japón",
+      "ganador_real": "Empate",
+      "jugado": true
+    },
+    {
+      "num": 11,
+      "grupo": "Grupo E",
+      "fecha": "Dom 14 Jun",
+      "fecha_iso": "2026-06-14",
+      "hora": "17:00",
+      "estadio": "Estadio Filadelfia",
+      "local": "Costa de Marfil",
+      "visitante": "Ecuador",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 12,
+      "grupo": "Grupo F",
+      "fecha": "Dom 14 Jun",
+      "fecha_iso": "2026-06-14",
+      "hora": "20:00",
+      "estadio": "Estadio Monterrey",
+      "local": "Suecia",
+      "visitante": "Túnez",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 13,
+      "grupo": "Grupo H",
+      "fecha": "Lun 15 Jun",
+      "fecha_iso": "2026-06-15",
+      "hora": "10:00",
+      "estadio": "Estadio Atlanta",
+      "local": "España",
+      "visitante": "Cabo Verde",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 14,
+      "grupo": "Grupo G",
+      "fecha": "Lun 15 Jun",
+      "fecha_iso": "2026-06-15",
+      "hora": "13:00",
+      "estadio": "Estadio Seattle",
+      "local": "Bélgica",
+      "visitante": "Egipto",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 15,
+      "grupo": "Grupo H",
+      "fecha": "Lun 15 Jun",
+      "fecha_iso": "2026-06-15",
+      "hora": "16:00",
+      "estadio": "Estadio Miami",
+      "local": "Arabia Saudita",
+      "visitante": "Uruguay",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 16,
+      "grupo": "Grupo G",
+      "fecha": "Lun 15 Jun",
+      "fecha_iso": "2026-06-15",
+      "hora": "19:00",
+      "estadio": "Estadio Los Ángeles",
+      "local": "Irán",
+      "visitante": "Nueva Zelanda",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 17,
+      "grupo": "Grupo J",
+      "fecha": "Lun 15 Jun",
+      "fecha_iso": "2026-06-15",
+      "hora": "22:00",
+      "estadio": "Estadio San Francisco",
+      "local": "Austria",
+      "visitante": "Jordania",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 18,
+      "grupo": "Grupo I",
+      "fecha": "Mar 16 Jun",
+      "fecha_iso": "2026-06-16",
+      "hora": "13:00",
+      "estadio": "Estadio Nueva York/NJ",
+      "local": "Francia",
+      "visitante": "Senegal",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 19,
+      "grupo": "Grupo I",
+      "fecha": "Mar 16 Jun",
+      "fecha_iso": "2026-06-16",
+      "hora": "16:00",
+      "estadio": "Estadio Boston",
+      "local": "Irak",
+      "visitante": "Noruega",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 20,
+      "grupo": "Grupo J",
+      "fecha": "Mar 16 Jun",
+      "fecha_iso": "2026-06-16",
+      "hora": "19:00",
+      "estadio": "Estadio Kansas City",
+      "local": "Argentina",
+      "visitante": "Argelia",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 21,
+      "grupo": "Grupo K",
+      "fecha": "Mié 17 Jun",
+      "fecha_iso": "2026-06-17",
+      "hora": "11:00",
+      "estadio": "Estadio Houston",
+      "local": "Portugal",
+      "visitante": "Rep. Dem. del Congo",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 22,
+      "grupo": "Grupo L",
+      "fecha": "Mié 17 Jun",
+      "fecha_iso": "2026-06-17",
+      "hora": "14:00",
+      "estadio": "Estadio Dallas",
+      "local": "Inglaterra",
+      "visitante": "Croacia",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 23,
+      "grupo": "Grupo L",
+      "fecha": "Mié 17 Jun",
+      "fecha_iso": "2026-06-17",
+      "hora": "17:00",
+      "estadio": "Estadio Toronto",
+      "local": "Ghana",
+      "visitante": "Panamá",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 24,
+      "grupo": "Grupo K",
+      "fecha": "Mié 17 Jun",
+      "fecha_iso": "2026-06-17",
+      "hora": "20:00",
+      "estadio": "Estadio Ciudad de México",
+      "local": "Uzbekistán",
+      "visitante": "Colombia",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 25,
+      "grupo": "Grupo A",
+      "fecha": "Jue 18 Jun",
+      "fecha_iso": "2026-06-18",
+      "hora": "10:00",
+      "estadio": "Estadio Atlanta",
+      "local": "República Checa",
+      "visitante": "Sudáfrica",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 26,
+      "grupo": "Grupo B",
+      "fecha": "Jue 18 Jun",
+      "fecha_iso": "2026-06-18",
+      "hora": "13:00",
+      "estadio": "Estadio Los Ángeles",
+      "local": "Suiza",
+      "visitante": "Bosnia y Herzegovina",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 27,
+      "grupo": "Grupo B",
+      "fecha": "Jue 18 Jun",
+      "fecha_iso": "2026-06-18",
+      "hora": "16:00",
+      "estadio": "BC Place Vancouver",
+      "local": "Canadá",
+      "visitante": "Catar",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 28,
+      "grupo": "Grupo A",
+      "fecha": "Jue 18 Jun",
+      "fecha_iso": "2026-06-18",
+      "hora": "19:00",
+      "estadio": "Estadio Guadalajara",
+      "local": "México",
+      "visitante": "República de Corea",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 29,
+      "grupo": "Grupo D",
+      "fecha": "Vie 19 Jun",
+      "fecha_iso": "2026-06-19",
+      "hora": "13:00",
+      "estadio": "Estadio Seattle",
+      "local": "Estados Unidos",
+      "visitante": "Australia",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 30,
+      "grupo": "Grupo C",
+      "fecha": "Vie 19 Jun",
+      "fecha_iso": "2026-06-19",
+      "hora": "16:00",
+      "estadio": "Estadio Boston",
+      "local": "Escocia",
+      "visitante": "Marruecos",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 31,
+      "grupo": "Grupo C",
+      "fecha": "Vie 19 Jun",
+      "fecha_iso": "2026-06-19",
+      "hora": "19:00",
+      "estadio": "Estadio Filadelfia",
+      "local": "Brasil",
+      "visitante": "Haití",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 32,
+      "grupo": "Grupo D",
+      "fecha": "Vie 19 Jun",
+      "fecha_iso": "2026-06-19",
+      "hora": "21:00",
+      "estadio": "Estadio San Francisco",
+      "local": "Turquía",
+      "visitante": "Paraguay",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 33,
+      "grupo": "Grupo F",
+      "fecha": "Vie 19 Jun",
+      "fecha_iso": "2026-06-19",
+      "hora": "22:00",
+      "estadio": "Estadio Monterrey",
+      "local": "Túnez",
+      "visitante": "Japón",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 34,
+      "grupo": "Grupo F",
+      "fecha": "Sáb 20 Jun",
+      "fecha_iso": "2026-06-20",
+      "hora": "11:00",
+      "estadio": "Estadio Houston",
+      "local": "Países Bajos",
+      "visitante": "Suecia",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 35,
+      "grupo": "Grupo E",
+      "fecha": "Sáb 20 Jun",
+      "fecha_iso": "2026-06-20",
+      "hora": "14:00",
+      "estadio": "Estadio Toronto",
+      "local": "Alemania",
+      "visitante": "Costa de Marfil",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 36,
+      "grupo": "Grupo E",
+      "fecha": "Sáb 20 Jun",
+      "fecha_iso": "2026-06-20",
+      "hora": "18:00",
+      "estadio": "Estadio Kansas City",
+      "local": "Ecuador",
+      "visitante": "Curazao",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 37,
+      "grupo": "Grupo H",
+      "fecha": "Dom 21 Jun",
+      "fecha_iso": "2026-06-21",
+      "hora": "10:00",
+      "estadio": "Estadio Atlanta",
+      "local": "España",
+      "visitante": "Arabia Saudita",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 38,
+      "grupo": "Grupo G",
+      "fecha": "Dom 21 Jun",
+      "fecha_iso": "2026-06-21",
+      "hora": "13:00",
+      "estadio": "Estadio Los Ángeles",
+      "local": "Bélgica",
+      "visitante": "Irán",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 39,
+      "grupo": "Grupo H",
+      "fecha": "Dom 21 Jun",
+      "fecha_iso": "2026-06-21",
+      "hora": "16:00",
+      "estadio": "Estadio Miami",
+      "local": "Uruguay",
+      "visitante": "Cabo Verde",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 40,
+      "grupo": "Grupo G",
+      "fecha": "Dom 21 Jun",
+      "fecha_iso": "2026-06-21",
+      "hora": "19:00",
+      "estadio": "BC Place Vancouver",
+      "local": "Nueva Zelanda",
+      "visitante": "Egipto",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 41,
+      "grupo": "Grupo J",
+      "fecha": "Lun 22 Jun",
+      "fecha_iso": "2026-06-22",
+      "hora": "11:00",
+      "estadio": "Estadio Dallas",
+      "local": "Argentina",
+      "visitante": "Austria",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 42,
+      "grupo": "Grupo I",
+      "fecha": "Lun 22 Jun",
+      "fecha_iso": "2026-06-22",
+      "hora": "15:00",
+      "estadio": "Estadio Filadelfia",
+      "local": "Francia",
+      "visitante": "Irak",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 43,
+      "grupo": "Grupo I",
+      "fecha": "Lun 22 Jun",
+      "fecha_iso": "2026-06-22",
+      "hora": "18:00",
+      "estadio": "Estadio Nueva York/NJ",
+      "local": "Noruega",
+      "visitante": "Senegal",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 44,
+      "grupo": "Grupo J",
+      "fecha": "Lun 22 Jun",
+      "fecha_iso": "2026-06-22",
+      "hora": "21:00",
+      "estadio": "Estadio San Francisco",
+      "local": "Jordania",
+      "visitante": "Argelia",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 45,
+      "grupo": "Grupo K",
+      "fecha": "Mar 23 Jun",
+      "fecha_iso": "2026-06-23",
+      "hora": "11:00",
+      "estadio": "Estadio Houston",
+      "local": "Portugal",
+      "visitante": "Uzbekistán",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 46,
+      "grupo": "Grupo L",
+      "fecha": "Mar 23 Jun",
+      "fecha_iso": "2026-06-23",
+      "hora": "14:00",
+      "estadio": "Estadio Boston",
+      "local": "Inglaterra",
+      "visitante": "Ghana",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 47,
+      "grupo": "Grupo L",
+      "fecha": "Mar 23 Jun",
+      "fecha_iso": "2026-06-23",
+      "hora": "17:00",
+      "estadio": "Estadio Toronto",
+      "local": "Panamá",
+      "visitante": "Croacia",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 48,
+      "grupo": "Grupo K",
+      "fecha": "Mar 23 Jun",
+      "fecha_iso": "2026-06-23",
+      "hora": "20:00",
+      "estadio": "Estadio Guadalajara",
+      "local": "Colombia",
+      "visitante": "Rep. Dem. del Congo",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 49,
+      "grupo": "Grupo B",
+      "fecha": "Mié 24 Jun",
+      "fecha_iso": "2026-06-24",
+      "hora": "13:00",
+      "estadio": "BC Place Vancouver",
+      "local": "Suiza",
+      "visitante": "Canadá",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 50,
+      "grupo": "Grupo B",
+      "fecha": "Mié 24 Jun",
+      "fecha_iso": "2026-06-24",
+      "hora": "13:00",
+      "estadio": "Estadio Seattle",
+      "local": "Bosnia y Herzegovina",
+      "visitante": "Catar",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 51,
+      "grupo": "Grupo C",
+      "fecha": "Mié 24 Jun",
+      "fecha_iso": "2026-06-24",
+      "hora": "16:00",
+      "estadio": "Estadio Miami",
+      "local": "Escocia",
+      "visitante": "Brasil",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 52,
+      "grupo": "Grupo C",
+      "fecha": "Mié 24 Jun",
+      "fecha_iso": "2026-06-24",
+      "hora": "16:00",
+      "estadio": "Estadio Atlanta",
+      "local": "Marruecos",
+      "visitante": "Haití",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 53,
+      "grupo": "Grupo A",
+      "fecha": "Mié 24 Jun",
+      "fecha_iso": "2026-06-24",
+      "hora": "19:00",
+      "estadio": "Estadio Ciudad de México",
+      "local": "República Checa",
+      "visitante": "México",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 54,
+      "grupo": "Grupo A",
+      "fecha": "Mié 24 Jun",
+      "fecha_iso": "2026-06-24",
+      "hora": "19:00",
+      "estadio": "Estadio Monterrey",
+      "local": "Sudáfrica",
+      "visitante": "República de Corea",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 55,
+      "grupo": "Grupo E",
+      "fecha": "Jue 25 Jun",
+      "fecha_iso": "2026-06-25",
+      "hora": "14:00",
+      "estadio": "Estadio Filadelfia",
+      "local": "Curazao",
+      "visitante": "Costa de Marfil",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 56,
+      "grupo": "Grupo E",
+      "fecha": "Jue 25 Jun",
+      "fecha_iso": "2026-06-25",
+      "hora": "14:00",
+      "estadio": "Estadio Nueva York/NJ",
+      "local": "Ecuador",
+      "visitante": "Alemania",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 57,
+      "grupo": "Grupo F",
+      "fecha": "Jue 25 Jun",
+      "fecha_iso": "2026-06-25",
+      "hora": "17:00",
+      "estadio": "Estadio Dallas",
+      "local": "Japón",
+      "visitante": "Suecia",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 58,
+      "grupo": "Grupo F",
+      "fecha": "Jue 25 Jun",
+      "fecha_iso": "2026-06-25",
+      "hora": "17:00",
+      "estadio": "Estadio Kansas City",
+      "local": "Túnez",
+      "visitante": "Países Bajos",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 59,
+      "grupo": "Grupo D",
+      "fecha": "Jue 25 Jun",
+      "fecha_iso": "2026-06-25",
+      "hora": "20:00",
+      "estadio": "Estadio Los Ángeles",
+      "local": "Turquía",
+      "visitante": "Estados Unidos",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 60,
+      "grupo": "Grupo D",
+      "fecha": "Jue 25 Jun",
+      "fecha_iso": "2026-06-25",
+      "hora": "20:00",
+      "estadio": "Estadio San Francisco",
+      "local": "Paraguay",
+      "visitante": "Australia",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 61,
+      "grupo": "Grupo I",
+      "fecha": "Vie 26 Jun",
+      "fecha_iso": "2026-06-26",
+      "hora": "13:00",
+      "estadio": "Estadio Boston",
+      "local": "Noruega",
+      "visitante": "Francia",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 62,
+      "grupo": "Grupo I",
+      "fecha": "Vie 26 Jun",
+      "fecha_iso": "2026-06-26",
+      "hora": "13:00",
+      "estadio": "Estadio Toronto",
+      "local": "Senegal",
+      "visitante": "Irak",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 63,
+      "grupo": "Grupo H",
+      "fecha": "Vie 26 Jun",
+      "fecha_iso": "2026-06-26",
+      "hora": "18:00",
+      "estadio": "Estadio Houston",
+      "local": "Cabo Verde",
+      "visitante": "Arabia Saudita",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 64,
+      "grupo": "Grupo H",
+      "fecha": "Vie 26 Jun",
+      "fecha_iso": "2026-06-26",
+      "hora": "18:00",
+      "estadio": "Estadio Guadalajara",
+      "local": "Uruguay",
+      "visitante": "España",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 65,
+      "grupo": "Grupo G",
+      "fecha": "Vie 26 Jun",
+      "fecha_iso": "2026-06-26",
+      "hora": "21:00",
+      "estadio": "Estadio Seattle",
+      "local": "Egipto",
+      "visitante": "Irán",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 66,
+      "grupo": "Grupo G",
+      "fecha": "Vie 26 Jun",
+      "fecha_iso": "2026-06-26",
+      "hora": "21:00",
+      "estadio": "BC Place Vancouver",
+      "local": "Nueva Zelanda",
+      "visitante": "Bélgica",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 67,
+      "grupo": "Grupo L",
+      "fecha": "Sáb 27 Jun",
+      "fecha_iso": "2026-06-27",
+      "hora": "15:00",
+      "estadio": "Estadio Nueva York/NJ",
+      "local": "Panamá",
+      "visitante": "Inglaterra",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 68,
+      "grupo": "Grupo L",
+      "fecha": "Sáb 27 Jun",
+      "fecha_iso": "2026-06-27",
+      "hora": "15:00",
+      "estadio": "Estadio Filadelfia",
+      "local": "Croacia",
+      "visitante": "Ghana",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 69,
+      "grupo": "Grupo K",
+      "fecha": "Sáb 27 Jun",
+      "fecha_iso": "2026-06-27",
+      "hora": "17:30",
+      "estadio": "Estadio Miami",
+      "local": "Colombia",
+      "visitante": "Portugal",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 70,
+      "grupo": "Grupo K",
+      "fecha": "Sáb 27 Jun",
+      "fecha_iso": "2026-06-27",
+      "hora": "17:30",
+      "estadio": "Estadio Atlanta",
+      "local": "Rep. Dem. del Congo",
+      "visitante": "Uzbekistán",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 71,
+      "grupo": "Grupo J",
+      "fecha": "Sáb 27 Jun",
+      "fecha_iso": "2026-06-27",
+      "hora": "20:00",
+      "estadio": "Estadio Kansas City",
+      "local": "Argelia",
+      "visitante": "Austria",
+      "ganador_real": null,
+      "jugado": false
+    },
+    {
+      "num": 72,
+      "grupo": "Grupo J",
+      "fecha": "Sáb 27 Jun",
+      "fecha_iso": "2026-06-27",
+      "hora": "20:00",
+      "estadio": "Estadio Dallas",
+      "local": "Jordania",
+      "visitante": "Argentina",
+      "ganador_real": null,
+      "jugado": false
+    }
+  ],
+  "predicciones": [
+    {
+      "partido_num": 1,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "México",
+          "pts": 2
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "México",
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "partido_num": 2,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "República de Corea",
+          "pts": 2
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "República de Corea",
+          "pts": 2
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "República de Corea",
+          "pts": 2
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "República de Corea",
+          "pts": 2
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "República Checa",
+          "pts": 0
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "República Checa",
+          "pts": 0
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "República de Corea",
+          "pts": 2
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "República de Corea",
+          "pts": 2
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "República de Corea",
+          "pts": 2
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "República Checa",
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "partido_num": 3,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Canadá",
+          "pts": 0
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Canadá",
+          "pts": 0
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Bosnia y Herzegovina",
+          "pts": 0
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Canadá",
+          "pts": 0
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Empate",
+          "pts": 2
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": 2
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Bosnia y Herzegovina",
+          "pts": 0
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": 2
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Canadá",
+          "pts": 0
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Canadá",
+          "pts": 0
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Canadá",
+          "pts": 0
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Canadá",
+          "pts": 0
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Empate",
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "partido_num": 4,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Estados Unidos",
+          "pts": 2
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Estados Unidos",
+          "pts": 2
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Paraguay",
+          "pts": 0
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Paraguay",
+          "pts": 0
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Paraguay",
+          "pts": 0
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Estados Unidos",
+          "pts": 2
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Paraguay",
+          "pts": 0
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Estados Unidos",
+          "pts": 2
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Estados Unidos",
+          "pts": 2
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Estados Unidos",
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "partido_num": 5,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Turquía",
+          "pts": 0
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Turquía",
+          "pts": 0
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Turquía",
+          "pts": 0
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Turquía",
+          "pts": 0
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Australia",
+          "pts": 2
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Turquía",
+          "pts": 0
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Turquía",
+          "pts": 0
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Australia",
+          "pts": 2
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Turquía",
+          "pts": 0
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Australia",
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "partido_num": 6,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Suiza",
+          "pts": 0
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Suiza",
+          "pts": 0
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": 2
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Suiza",
+          "pts": 0
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Suiza",
+          "pts": 0
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Suiza",
+          "pts": 0
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Suiza",
+          "pts": 0
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Catar",
+          "pts": 0
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Suiza",
+          "pts": 0
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Catar",
+          "pts": 0
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Suiza",
+          "pts": 0
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Suiza",
+          "pts": 0
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Catar",
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "partido_num": 7,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Brasil",
+          "pts": 0
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Brasil",
+          "pts": 0
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Marruecos",
+          "pts": 0
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Marruecos",
+          "pts": 0
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Brasil",
+          "pts": 0
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Brasil",
+          "pts": 0
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Brasil",
+          "pts": 0
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Brasil",
+          "pts": 0
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Brasil",
+          "pts": 0
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Brasil",
+          "pts": 0
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Brasil",
+          "pts": 0
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Empate",
+          "pts": 2
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Brasil",
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "partido_num": 8,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Escocia",
+          "pts": 2
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Escocia",
+          "pts": 2
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Escocia",
+          "pts": 2
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Escocia",
+          "pts": 2
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Escocia",
+          "pts": 2
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Empate",
+          "pts": 0
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Haití",
+          "pts": 0
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Escocia",
+          "pts": 2
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Escocia",
+          "pts": 2
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Empate",
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "partido_num": 9,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Alemania",
+          "pts": 2
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Alemania",
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "partido_num": 10,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Países Bajos",
+          "pts": 0
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Países Bajos",
+          "pts": 0
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": 2
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Países Bajos",
+          "pts": 0
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Países Bajos",
+          "pts": 0
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Países Bajos",
+          "pts": 0
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": 2
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Países Bajos",
+          "pts": 0
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Países Bajos",
+          "pts": 0
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": 2
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Países Bajos",
+          "pts": 0
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Empate",
+          "pts": 2
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Países Bajos",
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "partido_num": 11,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Costa de Marfil",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Costa de Marfil",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Ecuador",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 12,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Suecia",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Suecia",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Túnez",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Suecia",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Suecia",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Suecia",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Suecia",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Suecia",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Suecia",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Suecia",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Suecia",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Suecia",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 13,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "España",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 14,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Bélgica",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 15,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Arabia Saudita",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Uruguay",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 16,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Irán",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Irán",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 17,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Jordania",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Austria",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 18,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Francia",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 19,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Noruega",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 20,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Argentina",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 21,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Portugal",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 22,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Inglaterra",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 23,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Ghana",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Ghana",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Panamá",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Ghana",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Ghana",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Ghana",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Panamá",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Ghana",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Ghana",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Ghana",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Ghana",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 24,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Colombia",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 25,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Sudáfrica",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Sudáfrica",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Sudáfrica",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "República Checa",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "República Checa",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Sudáfrica",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "República Checa",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "República Checa",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "República Checa",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "República Checa",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 26,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Bosnia y Herzegovina",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Bosnia y Herzegovina",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Suiza",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 27,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Canadá",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Canadá",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Canadá",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Canadá",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Catar",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Catar",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Canadá",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Canadá",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Canadá",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Canadá",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Catar",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 28,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "México",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 29,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Australia",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Estados Unidos",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Estados Unidos",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Australia",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Estados Unidos",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Estados Unidos",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Estados Unidos",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 30,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Escocia",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Escocia",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Empate",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 31,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Haití",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Brasil",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 32,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Turquía",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Turquía",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Paraguay",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Turquía",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Paraguay",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Paraguay",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Paraguay",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Turquía",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Turquía",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Paraguay",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 33,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Japón",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 34,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Países Bajos",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 35,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Alemania",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 36,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Ecuador",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 37,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Arabia Saudita",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "España",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 38,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Irán",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Bélgica",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 39,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Cabo Verde",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Uruguay",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 40,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 41,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Argentina",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 42,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Francia",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 43,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Senegal",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Senegal",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 44,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Argelia",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Jordania",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Jordania",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Jordania",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Argelia",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Argelia",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Argelia",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Argelia",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Jordania",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 45,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Portugal",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 46,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Inglaterra",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 47,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Panamá",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Croacia",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 48,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Colombia",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 49,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Suiza",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Suiza",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 50,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Bosnia y Herzegovina",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Catar",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Bosnia y Herzegovina",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Catar",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Bosnia y Herzegovina",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Catar",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Catar",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Bosnia y Herzegovina",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Bosnia y Herzegovina",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Bosnia y Herzegovina",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Catar",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 51,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Brasil",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Brasil",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 52,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Haití",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Marruecos",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Marruecos",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 53,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "República Checa",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "México",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "México",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 54,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "República de Corea",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "República de Corea",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "República de Corea",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Sudáfrica",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Sudáfrica",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "República de Corea",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Sudáfrica",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "República de Corea",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "República de Corea",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "República de Corea",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "República de Corea",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "República de Corea",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 55,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Costa de Marfil",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Curazao",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Costa de Marfil",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Costa de Marfil",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Costa de Marfil",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Costa de Marfil",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Costa de Marfil",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Costa de Marfil",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Costa de Marfil",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Empate",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 56,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Ecuador",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Alemania",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Alemania",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 57,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Suecia",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Japón",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Japón",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 58,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Países Bajos",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Países Bajos",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 59,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Turquía",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Turquía",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Estados Unidos",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Turquía",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Turquía",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Estados Unidos",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Estados Unidos",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Estados Unidos",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Turquía",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Estados Unidos",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 60,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Paraguay",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Australia",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Australia",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Australia",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Paraguay",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Paraguay",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Australia",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Australia",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Paraguay",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Paraguay",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Australia",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 61,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Noruega",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Francia",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Francia",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 62,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Senegal",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Senegal",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Irak",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Irak",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Senegal",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Senegal",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Senegal",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Senegal",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Senegal",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 63,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Arabia Saudita",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Arabia Saudita",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Arabia Saudita",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Arabia Saudita",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Arabia Saudita",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Arabia Saudita",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Arabia Saudita",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Arabia Saudita",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Arabia Saudita",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 64,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Uruguay",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "España",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "España",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 65,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Irán",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Irán",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Irán",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Egipto",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Egipto",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 66,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Nueva Zelanda",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Bélgica",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Bélgica",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 67,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Inglaterra",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Inglaterra",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 68,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Croacia",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Croacia",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 69,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Colombia",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Portugal",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Portugal",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 70,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Uzbekistán",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Rep. Dem. del Congo",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Rep. Dem. del Congo",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Uzbekistán",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Rep. Dem. del Congo",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Rep. Dem. del Congo",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Uzbekistán",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Rep. Dem. del Congo",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Uzbekistán",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Rep. Dem. del Congo",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Uzbekistán",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 71,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Argelia",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Empate",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Austria",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Austria",
+          "pts": null
+        }
+      ]
+    },
+    {
+      "partido_num": 72,
+      "predicciones": [
+        {
+          "slot": 1,
+          "nombre": "El Viso",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 2,
+          "nombre": "Fer Creel",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 3,
+          "nombre": "Javi",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 4,
+          "nombre": "Jimena",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 5,
+          "nombre": "Andy Ibarra",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 6,
+          "nombre": "Amaya",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 7,
+          "nombre": "Emanator",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 8,
+          "nombre": "Cas",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 9,
+          "nombre": "Lucia",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 10,
+          "nombre": "Simona",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 11,
+          "nombre": "Luigi",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 12,
+          "nombre": "Ohano #3",
+          "pick": "Argentina",
+          "pts": null
+        },
+        {
+          "slot": 13,
+          "nombre": "Ximena",
+          "pick": "Argentina",
+          "pts": null
+        }
+      ]
+    }
+  ],
+  "bonus": [
+    {
+      "slot": 1,
+      "nombre": "El Viso",
+      "campeon": "Portugal",
+      "goleador": "Oyarzabal",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 2,
+      "nombre": "Fer Creel",
+      "campeon": "Países Bajos",
+      "goleador": "Kylian Mbappé (Francia)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 3,
+      "nombre": "Javi",
+      "campeon": "Portugal",
+      "goleador": "Harry Kane (Inglaterra)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 4,
+      "nombre": "Jimena",
+      "campeon": "Francia",
+      "goleador": "Kylian Mbappé (Francia)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 5,
+      "nombre": "Andy Ibarra",
+      "campeon": "Portugal",
+      "goleador": "Kylian Mbappé (Francia)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 6,
+      "nombre": "Amaya",
+      "campeon": "Francia",
+      "goleador": "Kylian Mbappé (Francia)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 7,
+      "nombre": "Emanator",
+      "campeon": "Francia",
+      "goleador": "Kylian Mbappé (Francia)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 8,
+      "nombre": "Cas",
+      "campeon": "Portugal",
+      "goleador": "Vinícius Júnior (Brasil)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 9,
+      "nombre": "Lucia",
+      "campeon": "España",
+      "goleador": "Kylian Mbappé (Francia)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 10,
+      "nombre": "Simona",
+      "campeon": "Portugal",
+      "goleador": "Lamine Yamal (España)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 11,
+      "nombre": "Luigi",
+      "campeon": "España",
+      "goleador": "Kylian Mbappé (Francia)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 12,
+      "nombre": "Ohano #3",
+      "campeon": "España",
+      "goleador": "Julián Álvarez (Argentina)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    },
+    {
+      "slot": 13,
+      "nombre": "Ximena",
+      "campeon": "España",
+      "goleador": "Lamine Yamal (España)",
+      "pts_campeon": null,
+      "pts_goleador": null
+    }
+  ],
+  "clasificacion": [
+    {
+      "slot": 12,
+      "nombre": "Ohano #3",
+      "pts_total": 14,
+      "pts_partidos": 14,
+      "pts_bonus": 0,
+      "aciertos": 7,
+      "fallos": 3,
+      "pos": 1
+    },
+    {
+      "slot": 3,
+      "nombre": "Javi",
+      "pts_total": 12,
+      "pts_partidos": 12,
+      "pts_bonus": 0,
+      "aciertos": 6,
+      "fallos": 4,
+      "pos": 2
+    },
+    {
+      "slot": 5,
+      "nombre": "Andy Ibarra",
+      "pts_total": 12,
+      "pts_partidos": 12,
+      "pts_bonus": 0,
+      "aciertos": 6,
+      "fallos": 4,
+      "pos": 3
+    },
+    {
+      "slot": 6,
+      "nombre": "Amaya",
+      "pts_total": 10,
+      "pts_partidos": 10,
+      "pts_bonus": 0,
+      "aciertos": 5,
+      "fallos": 5,
+      "pos": 4
+    },
+    {
+      "slot": 7,
+      "nombre": "Emanator",
+      "pts_total": 10,
+      "pts_partidos": 10,
+      "pts_bonus": 0,
+      "aciertos": 5,
+      "fallos": 5,
+      "pos": 5
+    },
+    {
+      "slot": 10,
+      "nombre": "Simona",
+      "pts_total": 10,
+      "pts_partidos": 10,
+      "pts_bonus": 0,
+      "aciertos": 5,
+      "fallos": 5,
+      "pos": 6
+    },
+    {
+      "slot": 13,
+      "nombre": "Ximena",
+      "pts_total": 10,
+      "pts_partidos": 10,
+      "pts_bonus": 0,
+      "aciertos": 5,
+      "fallos": 5,
+      "pos": 7
+    },
+    {
+      "slot": 1,
+      "nombre": "El Viso",
+      "pts_total": 8,
+      "pts_partidos": 8,
+      "pts_bonus": 0,
+      "aciertos": 4,
+      "fallos": 6,
+      "pos": 8
+    },
+    {
+      "slot": 11,
+      "nombre": "Luigi",
+      "pts_total": 8,
+      "pts_partidos": 8,
+      "pts_bonus": 0,
+      "aciertos": 4,
+      "fallos": 6,
+      "pos": 9
+    },
+    {
+      "slot": 2,
+      "nombre": "Fer Creel",
+      "pts_total": 6,
+      "pts_partidos": 6,
+      "pts_bonus": 0,
+      "aciertos": 3,
+      "fallos": 7,
+      "pos": 10
+    },
+    {
+      "slot": 4,
+      "nombre": "Jimena",
+      "pts_total": 6,
+      "pts_partidos": 6,
+      "pts_bonus": 0,
+      "aciertos": 3,
+      "fallos": 7,
+      "pos": 11
+    },
+    {
+      "slot": 8,
+      "nombre": "Cas",
+      "pts_total": 6,
+      "pts_partidos": 6,
+      "pts_bonus": 0,
+      "aciertos": 3,
+      "fallos": 7,
+      "pos": 12
+    },
+    {
+      "slot": 9,
+      "nombre": "Lucia",
+      "pts_total": 6,
+      "pts_partidos": 6,
+      "pts_bonus": 0,
+      "aciertos": 3,
+      "fallos": 7,
+      "pos": 13
+    }
+  ]
+}

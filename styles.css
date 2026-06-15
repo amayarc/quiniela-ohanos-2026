@@ -1,0 +1,981 @@
+/* ========= Paleta Mundial 2026 ========= */
+:root {
+  --orange: #F26522;
+  --orange-dark: #C44E15;
+  --blue: #1A3C6E;
+  --blue-light: #2E5FA3;
+  --gold: #FFD700;
+  --silver: #C0C0C0;
+  --bronze: #CD7F32;
+  --green: #2E8B57;
+  --bg: #F7F9FC;
+  --card: #FFFFFF;
+  --text: #1A3C6E;
+  --muted: #6B7280;
+  --border: #E5E7EB;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* ========= Header ========= */
+header {
+  background: linear-gradient(135deg, var(--orange) 0%, var(--blue) 100%);
+  color: #fff;
+  padding: 20px 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.title-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.ball {
+  font-size: 2.5rem;
+  animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+header h1 { font-size: 1.5rem; letter-spacing: -0.3px; }
+.subtitle { font-size: 0.9rem; opacity: 0.9; }
+.status-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.pill {
+  background: rgba(255,255,255,0.18);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ========= Tabs ========= */
+.tabs {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.tabs::-webkit-scrollbar { height: 4px; }
+.tabs::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 2px; }
+.tab {
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+  padding: 14px 20px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.tab:hover { color: var(--orange); background: #FFF6F0; }
+.tab.active {
+  color: var(--orange);
+  border-bottom-color: var(--orange);
+  background: #FFF6F0;
+}
+
+/* ========= Main / sections ========= */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+.tab-content h2 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+  color: var(--blue);
+}
+.updated, .info {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+}
+
+/* ========= Podio (top 3) ========= */
+.podium {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+.podium-card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 18px 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border: 2px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.podium-card.gold   { border-color: var(--gold);   background: linear-gradient(180deg, #FFFCEB 0%, #fff 60%); }
+.podium-card.silver { border-color: var(--silver); background: linear-gradient(180deg, #F8F8F8 0%, #fff 60%); }
+.podium-card.bronze { border-color: var(--bronze); background: linear-gradient(180deg, #FFF4E6 0%, #fff 60%); }
+.podium-medal { font-size: 2rem; margin-bottom: 6px; }
+.podium-name { font-weight: 700; font-size: 1rem; color: var(--blue); margin-bottom: 4px; word-break: break-word; }
+.podium-pts { font-size: 1.8rem; font-weight: 800; color: var(--orange); }
+.podium-sub { font-size: 0.8rem; color: var(--muted); }
+
+/* ========= Tabla ========= */
+.table-wrap {
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-top: 12px;
+}
+.rank-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+.rank-table th {
+  background: var(--blue);
+  color: #fff;
+  padding: 12px 10px;
+  text-align: left;
+  font-weight: 600;
+}
+.rank-table th:first-child, .rank-table td:first-child { text-align: center; width: 50px; }
+.rank-table th:nth-child(3), .rank-table td:nth-child(3) { text-align: center; }
+.rank-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.rank-table tr:last-child td { border-bottom: none; }
+.rank-table tr:hover { background: #FFF6F0; }
+.rank-table .pos-1 { background: linear-gradient(90deg, #FFFCEB 0%, transparent 100%); font-weight: 700; }
+.rank-table .pos-2 { background: linear-gradient(90deg, #F8F8F8 0%, transparent 100%); }
+.rank-table .pos-3 { background: linear-gradient(90deg, #FFF4E6 0%, transparent 100%); }
+.rank-table td.total { font-weight: 700; color: var(--orange); font-size: 1.05rem; text-align: center; }
+.rank-table td.center { text-align: center; }
+
+/* ========= Filtros ========= */
+.filter-row {
+  margin-bottom: 18px;
+}
+.filter-row label {
+  font-weight: 600;
+  color: var(--blue);
+}
+.filter-row select {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  font-size: 0.95rem;
+  background: var(--card);
+  color: var(--text);
+  margin-left: 8px;
+  cursor: pointer;
+}
+.filter-row select:focus { outline: none; border-color: var(--orange); }
+
+/* ========= Partidos ========= */
+.partidos-day {
+  margin-bottom: 24px;
+}
+.partidos-day h3 {
+  color: var(--orange);
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  padding-left: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.partidos-day.day-today {
+  background: linear-gradient(135deg, #FFF6F0 0%, #FFFCEB 100%);
+  border: 2px solid var(--orange);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.partidos-day.day-today h3 {
+  color: var(--orange);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.duelos-header {
+  color: var(--orange);
+  font-size: 1.1rem;
+  margin: 16px 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+}
+.duelo-card.duelo-hoy {
+  border-left-color: var(--gold);
+  background: linear-gradient(180deg, #FFFCEB 0%, var(--card) 70%);
+}
+.partido-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.partido-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.partido-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.partido-info {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.partido-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.partido-team { flex: 1; }
+.partido-team.local { text-align: right; padding-right: 12px; }
+.partido-team.visit { text-align: left; padding-left: 12px; }
+.partido-score {
+  background: var(--blue);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  min-width: 70px;
+  text-align: center;
+}
+.partido-score.pending { background: #E5E7EB; color: var(--muted); font-size: 0.85rem; padding: 8px 14px; }
+.partido-detail {
+  display: none;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.partido-card.open .partido-detail { display: block; }
+.pred-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+.pred-item {
+  background: var(--bg);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pred-item .pred-name { flex: 1; color: var(--text); }
+.pred-item .pred-score { font-weight: 700; color: var(--orange); font-size: 0.95rem; margin-left: 6px; }
+.pred-item.exact { background: #D4EDDA; }
+.pred-item.exact .pred-score { color: var(--green); }
+.pred-item.partial { background: #FFF6D9; }
+.pred-item .pred-pts {
+  background: var(--orange);
+  color: #fff;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-left: 6px;
+}
+.pred-item.exact .pred-pts { background: var(--green); }
+.pred-item.fail .pred-pts { background: var(--muted); }
+
+/* ========= Por persona ========= */
+.persona-header {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.persona-name { font-size: 1.4rem; font-weight: 700; color: var(--blue); }
+.persona-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+.persona-stat {
+  background: var(--bg);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.persona-stat .num { font-size: 1.3rem; font-weight: 700; color: var(--orange); }
+.persona-stat .lbl { font-size: 0.78rem; color: var(--muted); }
+.persona-bonus {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.persona-bonus div {
+  flex: 1;
+  background: linear-gradient(135deg, var(--gold) 0%, #FFA500 100%);
+  color: var(--blue);
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  min-width: 140px;
+}
+.persona-bonus div small { display: block; font-size: 0.7rem; opacity: 0.7; }
+
+/* ========= Hero secciones Campeón / Goleador ========= */
+.hero-bonus {
+  color: #fff;
+  text-align: center;
+  padding: 28px 20px 24px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.hero-blue { background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%); }
+.hero-orange { background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%); }
+.hero-deco-l, .hero-deco-r {
+  position: absolute;
+  font-size: 6rem;
+  opacity: 0.08;
+  pointer-events: none;
+}
+.hero-deco-l { top: -20px; left: -10px; }
+.hero-deco-r { bottom: -20px; right: -10px; }
+.hero-orange .hero-deco-r { opacity: 0.12; top: -20px; bottom: auto; }
+
+.hero-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0.85;
+  margin-bottom: 2px;
+  position: relative;
+  z-index: 1;
+}
+.hero-h2 {
+  font-size: 2rem !important;
+  color: #fff !important;
+  margin-bottom: 8px !important;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  font-weight: 900;
+  position: relative;
+  z-index: 1;
+}
+.hero-h2-sub {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.85;
+  margin-top: 6px;
+  letter-spacing: 0;
+}
+.hero-sub {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--blue);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ========= Pie chart Campeón ========= */
+.pie-block {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 22px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.pie-chart {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.pie-chart::after {
+  content: '🏆';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.pie-list { display: flex; flex-direction: column; }
+.pie-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.pie-row:last-child { border-bottom: none; }
+.pie-row .dot {
+  width: 16px; height: 16px; border-radius: 4px; flex-shrink: 0;
+}
+.pie-row .flag-big { font-size: 2rem; }
+.pie-row .info { flex: 1; }
+.pie-row .equipo { font-weight: 700; color: var(--blue); font-size: 1.05rem; }
+.pie-row .votos { font-size: 0.82rem; color: var(--muted); }
+.pie-row .pct {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+/* Personas que votaron por cada campeón */
+.campeon-detalle-title {
+  font-weight: 700;
+  color: var(--blue);
+  margin: 18px 0 10px;
+  font-size: 1.05rem;
+}
+.campeon-detalle-row {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  border-left: 4px solid var(--orange);
+}
+.campeon-detalle-row .flag-md { font-size: 1.5rem; }
+.campeon-detalle-row .equipo-nombre { font-weight: 700; color: var(--blue); min-width: 80px; }
+.campeon-detalle-row .personas { font-size: 0.85rem; color: var(--text); flex: 1; }
+
+/* ========= Cards de votos ========= */
+.votos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.voto-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-left: 4px solid var(--orange);
+}
+.voto-equipo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.voto-flag { font-size: 1.5rem; }
+.voto-count {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.voto-bar {
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.voto-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--orange) 0%, var(--gold) 100%);
+  border-radius: 4px;
+}
+.voto-personas {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+/* ========= Goleador podio (top 3) ========= */
+.goleador-podium {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr 1fr;
+  gap: 10px;
+  margin: 22px 0 16px;
+  align-items: end;
+}
+.podio-spot {
+  border-radius: 14px;
+  padding: 22px 12px 18px;
+  text-align: center;
+  position: relative;
+  border-width: 3px;
+  border-style: solid;
+}
+.podio-spot.rank-1 {
+  border-color: var(--gold);
+  background: linear-gradient(180deg, #FFFCEB 0%, #fff 50%);
+  padding-top: 28px;
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.25);
+  border-width: 4px;
+}
+.podio-spot.rank-2 {
+  border-color: var(--silver);
+  background: linear-gradient(180deg, #F8F8F8 0%, #fff 50%);
+}
+.podio-spot.rank-3 {
+  border-color: var(--bronze);
+  background: linear-gradient(180deg, #FFF4E6 0%, #fff 50%);
+}
+.podio-rank {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+.podio-spot.rank-1 .podio-rank {
+  background: var(--gold); color: var(--blue);
+  width: 46px; height: 46px; font-size: 1.3rem;
+  top: -22px;
+}
+.podio-spot.rank-2 .podio-rank { background: var(--silver); color: var(--blue); }
+.podio-spot.rank-3 .podio-rank { background: var(--bronze); color: #fff; }
+.podio-flag { font-size: 2.8rem; margin: 6px 0 4px; }
+.podio-spot.rank-1 .podio-flag { font-size: 3.6rem; }
+.podio-name { font-weight: 800; color: var(--blue); font-size: 1rem; }
+.podio-spot.rank-1 .podio-name { font-size: 1.2rem; font-weight: 900; }
+.podio-votes {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin-top: 8px;
+}
+.podio-spot.rank-1 .podio-votes {
+  background: var(--gold); color: var(--blue);
+  font-size: 0.95rem; font-weight: 900;
+}
+.podio-spot.rank-2 .podio-votes { background: var(--silver); color: var(--blue); }
+.podio-spot.rank-3 .podio-votes { background: var(--bronze); color: #fff; }
+.podio-personas {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 6px;
+  line-height: 1.3;
+}
+
+/* Resto de goleadores (4° en adelante) */
+.goleador-resto {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+.resto-card {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 10px;
+  text-align: center;
+}
+.resto-pos {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.resto-flag { font-size: 1.7rem; }
+.resto-name { font-weight: 700; color: var(--blue); font-size: 0.92rem; margin-top: 2px; }
+.resto-votes {
+  color: var(--orange);
+  font-weight: 800;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+.resto-persona {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 4px;
+  line-height: 1.3;
+}
+
+/* ========= Duelos ========= */
+.duelo-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-left: 4px solid var(--orange);
+}
+.duelo-head {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.duelo-match {
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.duelo-vs {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.duelo-side {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--bg);
+}
+.duelo-side.winner { background: #D4EDDA; border: 2px solid var(--green); }
+.duelo-side.loser { opacity: 0.55; }
+.duelo-side .side-name { font-weight: 700; color: var(--blue); font-size: 0.95rem; }
+.duelo-side .side-pred { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+.duelo-vs-text { font-weight: 700; color: var(--orange); font-size: 1.1rem; }
+.duelo-status {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 10px;
+  text-align: center;
+}
+.duelo-status.played { color: var(--green); font-weight: 600; }
+
+/* ========= Reglas ========= */
+.reglas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+.regla-card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-top: 4px solid var(--orange);
+}
+.regla-card.highlight { border-top-color: var(--blue); background: linear-gradient(180deg, #F0F6FF 0%, #fff 50%); }
+.regla-card h3 { font-size: 1rem; color: var(--blue); margin-bottom: 8px; }
+.regla-card .big {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--orange);
+  margin: 6px 0;
+}
+.regla-card p { font-size: 0.88rem; color: var(--text); }
+
+/* ========= Capturar (panel admin) ========= */
+.login-card {
+  max-width: 360px;
+  margin: 30px auto;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border-top: 4px solid var(--orange);
+}
+.login-icon { font-size: 3rem; margin-bottom: 8px; }
+.login-card h3 { color: var(--blue); font-size: 1.2rem; margin-bottom: 4px; }
+.login-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 18px; }
+.login-card input[type=password] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+.login-card input[type=password]:focus { outline: none; border-color: var(--orange); }
+.login-error {
+  color: #C44E15 !important;
+  font-size: 0.85rem !important;
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+  min-height: 16px;
+}
+.btn-primary {
+  background: var(--orange);
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+  box-shadow: 0 2px 6px rgba(242, 101, 34, 0.3);
+}
+.btn-primary:hover { background: var(--orange-dark); transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(0); }
+.btn-secondary {
+  background: transparent;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-secondary:hover { background: var(--blue); color: #fff; }
+
+.capt-instructions {
+  background: #FFF6F0;
+  border-left: 4px solid var(--orange);
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.capt-instructions ol {
+  margin: 8px 0 0 20px;
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.capt-section {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.capt-section h3 {
+  color: var(--blue);
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+.capt-bonus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.capt-bonus-grid label {
+  display: block;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+.capt-bonus-grid input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.capt-bonus-grid input:focus { outline: none; border-color: var(--orange); }
+
+/* Lista de partidos en panel captura */
+.capt-partido {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+.capt-partido.has-result { background: #E8F5E9; }
+.capt-partido-info { font-size: 0.92rem; }
+.capt-partido-teams { font-weight: 700; color: var(--blue); }
+.capt-partido-meta { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+.capt-score-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.capt-score-inputs input {
+  width: 50px;
+  padding: 8px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.capt-score-inputs input:focus { outline: none; border-color: var(--orange); }
+.capt-score-inputs .dash { color: var(--muted); font-weight: 700; }
+
+.capt-actions {
+  position: sticky;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, var(--bg) 30%);
+  padding: 24px 0 12px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.save-msg {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 8px;
+  min-height: 20px;
+}
+.save-msg.pending { color: var(--muted); }
+.save-msg.ok      { color: #2E7D32; }
+.save-msg.err     { color: #C44E15; }
+
+/* ========= Captura OHANOS — radio buttons ========= */
+.capt-partido.ohanos {
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.capt-pick-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.capt-pick-opt {
+  flex: 1 1 100px;
+  min-width: 100px;
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.capt-pick-opt input {
+  display: none;
+}
+.capt-pick-opt:hover {
+  border-color: var(--orange);
+  background: #FFF6F0;
+}
+.capt-pick-opt.active {
+  background: var(--orange);
+  color: #fff;
+  border-color: var(--orange);
+}
+.capt-pick-clear {
+  background: transparent;
+  border: 2px solid var(--border);
+  color: var(--muted);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.capt-pick-clear:hover {
+  border-color: #C44E15;
+  color: #C44E15;
+}
+
+/* ========= Footer ========= */
+footer {
+  text-align: center;
+  padding: 24px 16px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 32px;
+}
+
+/* ========= Responsive ========= */
+@media (max-width: 720px) {
+  header h1 { font-size: 1.2rem; }
+  .ball { font-size: 2rem; }
+  .tab { padding: 12px 14px; font-size: 0.85rem; }
+  .hide-mobile { display: none; }
+  .podium-card { padding: 12px 8px; }
+  .podium-name { font-size: 0.85rem; }
+  .podium-pts { font-size: 1.4rem; }
+  .partido-teams { font-size: 0.92rem; }
+  .partido-score { font-size: 1rem; min-width: 60px; padding: 4px 10px; }
+  main { padding: 16px 12px; }
+  .rank-table th, .rank-table td { padding: 8px 6px; font-size: 0.85rem; }
+  .hero-h2 { font-size: 1.5rem !important; }
+  .hero-h2-sub { font-size: 0.95rem; }
+  /* Pie chart vertical en móvil */
+  .pie-block { grid-template-columns: 1fr; gap: 16px; }
+  .pie-chart { width: 200px; height: 200px; margin: 0 auto; }
+  .pie-chart::after { width: 80px; height: 80px; font-size: 2.5rem; }
+  /* Podio más compacto */
+  .podio-flag { font-size: 2.2rem; }
+  .podio-spot.rank-1 .podio-flag { font-size: 2.8rem; }
+  .podio-name { font-size: 0.85rem; }
+  .podio-spot.rank-1 .podio-name { font-size: 1rem; }
+  .podio-personas { display: none; }
+}
