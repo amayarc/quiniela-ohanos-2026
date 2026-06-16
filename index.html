@@ -182,21 +182,15 @@
         </div>
 
         <div class="capt-section">
-          <h3>🥾 Bota de Oro · Líder actual</h3>
-          <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">Pon los jugadores que actualmente lideran la tabla de goleadores del Mundial. Si son varios empatados, escríbelos todos.</p>
-          <div class="capt-bonus-grid">
-            <div>
-              <label>Goles del líder</label>
-              <input type="number" id="capt-bota-goles" min="0" max="20" placeholder="Ej: 2">
-            </div>
-            <div>
-              <label>Fecha de actualización</label>
-              <input type="date" id="capt-bota-fecha">
-            </div>
+          <h3>🥾 Bota de Oro · Líderes actuales</h3>
+          <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">Pon los jugadores con más goles del Mundial. Cada uno con su número de goles. Si quieres ver solo los top, mete solo esos.</p>
+          <div>
+            <label style="font-weight:600;color:var(--text);display:block;margin-bottom:6px;font-size:0.9rem;">Fecha de actualización</label>
+            <input type="date" id="capt-bota-fecha" style="padding:8px 12px;border:2px solid var(--border);border-radius:8px;font-size:0.95rem;">
           </div>
           <div style="margin-top:12px;">
-            <label style="font-weight:600;color:var(--text);display:block;margin-bottom:6px;font-size:0.9rem;">Líderes (uno por línea, formato <code>Nombre - País</code>)</label>
-            <textarea id="capt-bota-lideres" rows="4" placeholder="Folarin Balogun - Estados Unidos&#10;Kai Havertz - Alemania&#10;Yasin Ayari - Suecia"></textarea>
+            <label style="font-weight:600;color:var(--text);display:block;margin-bottom:6px;font-size:0.9rem;">Jugadores (uno por línea, formato <code>Nombre - País - Goles</code>)</label>
+            <textarea id="capt-bota-lideres" rows="5" placeholder="Folarin Balogun - Estados Unidos - 2&#10;Kai Havertz - Alemania - 2&#10;Yasin Ayari - Suecia - 2&#10;Elijah Just - Nueva Zelanda - 2"></textarea>
           </div>
         </div>
 

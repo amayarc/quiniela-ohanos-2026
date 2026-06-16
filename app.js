@@ -470,32 +470,47 @@ function renderCampeon() {
   `;
 }
 
-// ========= Bota de Oro · líder actual real =========
+// ========= Bota de Oro · tabla =========
 function renderBotaActual() {
   const cont = document.getElementById('bota-actual');
   if (!cont) return;
   const bota = DATA.meta.bota_de_oro;
-  if (!bota || !bota.lideres || bota.lideres.length === 0 || !bota.goles) {
+  if (!bota || !bota.lideres || bota.lideres.length === 0) {
     cont.innerHTML = '';
     return;
   }
-  const n = bota.lideres.length;
-  const statsTxt = n > 1 ? `${n} jugadores empatados` : '1 jugador en la cima';
+  const lideres = bota.lideres.map(l => ({
+    nombre: l.nombre,
+    pais:   l.pais,
+    goles:  (l.goles != null ? l.goles : bota.goles) || 0,
+  })).sort((a, b) => b.goles - a.goles || a.nombre.localeCompare(b.nombre));
+
+  const n = lideres.length;
   cont.innerHTML = `
     <div class="bota-actual-head">
       <span class="bota-actual-title">🥇 Bota de Oro · Líder real del Mundial</span>
-      <span class="bota-actual-stats">${statsTxt}</span>
+      <span class="bota-actual-stats">${n} jugador${n === 1 ? '' : 'es'}</span>
     </div>
-    <div class="bota-actual-goles">
-      ${bota.goles} <small>gol${bota.goles === 1 ? '' : 'es'}</small>
+    <div class="bota-table-wrap">
+      <table class="bota-table">
+        <thead>
+          <tr>
+            <th class="c">País</th>
+            <th>Jugador</th>
+            <th class="c">Goles</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${lideres.map(l => `
+            <tr>
+              <td class="col-pais">${flag(l.pais)}</td>
+              <td class="col-jugador">${escapeHtml(l.nombre)}</td>
+              <td class="col-goles">${l.goles}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
     </div>
-    ${bota.lideres.map(l => `
-      <div class="bota-lider-row">
-        <span class="bota-lider-flag">${flag(l.pais)}</span>
-        <span class="bota-lider-name">${escapeHtml(l.nombre)}</span>
-        <span class="bota-lider-pais">${escapeHtml(l.pais)}</span>
-      </div>
-    `).join('')}
     ${bota.actualizado ? `<div class="bota-actual-footer">Actualizado: ${escapeHtml(bota.actualizado)}</div>` : ''}
   `;
 }
@@ -594,9 +609,11 @@ function renderCapturarPanel() {
 
   // Bota de Oro
   const bota = CAPT.meta.bota_de_oro || {};
-  document.getElementById('capt-bota-goles').value = bota.goles || '';
   document.getElementById('capt-bota-fecha').value = bota.actualizado || '';
-  const lideresTxt = (bota.lideres || []).map(l => `${l.nombre} - ${l.pais}`).join('\n');
+  const lideresTxt = (bota.lideres || []).map(l => {
+    const g = (l.goles != null ? l.goles : bota.goles) || '';
+    return `${l.nombre} - ${l.pais} - ${g}`;
+  }).join('\n');
   document.getElementById('capt-bota-lideres').value = lideresTxt;
 
   renderCapturarPartidos();
@@ -684,7 +701,6 @@ async function guardarEnFirebase() {
   CAPT.meta.goleador_real = (CAPT.meta.goleador_real || '').trim() || null;
 
   // Procesar Bota de Oro desde inputs
-  const goles = parseInt(document.getElementById('capt-bota-goles').value);
   const fecha = document.getElementById('capt-bota-fecha').value || null;
   const lideresTxt = document.getElementById('capt-bota-lideres').value || '';
   const lideres = lideresTxt.split('\n')
@@ -692,12 +708,14 @@ async function guardarEnFirebase() {
     .filter(line => line.length > 0)
     .map(line => {
       const m = line.split(/\s*[-–—]\s*/);
-      return { nombre: (m[0] || '').trim(), pais: (m[1] || '').trim() };
+      return {
+        nombre: (m[0] || '').trim(),
+        pais:   (m[1] || '').trim(),
+        goles:  parseInt(m[2]) || 0,
+      };
     })
-    .filter(l => l.nombre);
-  CAPT.meta.bota_de_oro = (goles && lideres.length > 0) ? {
-    goles, lideres, actualizado: fecha
-  } : null;
+    .filter(l => l.nombre && l.goles > 0);
+  CAPT.meta.bota_de_oro = lideres.length > 0 ? { lideres, actualizado: fecha } : null;
 
   const payload = {
     resultados:    {},
