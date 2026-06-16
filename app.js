@@ -194,6 +194,19 @@ const GOLEADOR_PAIS = {
   'Ousmane Dembélé':'Francia','Julián Álvarez':'Argentina','Oyarzabal':'España',
   'Lautaro Martínez':'Argentina','Messi':'Argentina','Lionel Messi':'Argentina',
 };
+
+// Extrae el país de un nombre tipo "Kylian Mbappé (Francia)" o lo busca en GOLEADOR_PAIS
+function detectarPais(jugador) {
+  if (!jugador) return '';
+  const m = String(jugador).match(/\(([^)]+)\)\s*$/);
+  if (m) return m[1].trim();
+  return GOLEADOR_PAIS[String(jugador).trim()] || '';
+}
+// Quita el "(País)" del nombre para mostrar solo el nombre limpio
+function limpiarNombre(jugador) {
+  if (!jugador) return '';
+  return String(jugador).replace(/\s*\([^)]+\)\s*$/, '').trim();
+}
 const TEAM_COLORS = {
   'España':'#C62828','Francia':'#1565C0','Brasil':'#2E7D32','Argentina':'#5BAEE0',
   'Alemania':'#212121','Inglaterra':'#E53935','Portugal':'#8E0F0F','Países Bajos':'#F26522',
@@ -505,13 +518,13 @@ function renderGoleador() {
 
   document.getElementById('goleador-podium').innerHTML = visualOrder.map(({ rank, data }) => {
     const [jugador, personas] = data;
-    const pais = GOLEADOR_PAIS[jugador] || '';
+    const pais = detectarPais(jugador);
     const flagEmoji = pais ? flag(pais) : '⚽';
     return `
       <div class="podio-spot rank-${rank}">
         <div class="podio-rank">${rank}</div>
         <div class="podio-flag">${flagEmoji}</div>
-        <div class="podio-name">${escapeHtml(jugador)}</div>
+        <div class="podio-name">${escapeHtml(limpiarNombre(jugador))}</div>
         <div class="podio-votes">${personas.length} voto${personas.length === 1 ? '' : 's'}</div>
         <div class="podio-personas">${personas.map(escapeHtml).join(', ')}</div>
       </div>
@@ -521,13 +534,13 @@ function renderGoleador() {
   const resto = sorted.slice(3);
   document.getElementById('goleador-resto').innerHTML = resto.map(([jugador, personas], i) => {
     const rank = i + 4;
-    const pais = GOLEADOR_PAIS[jugador] || '';
+    const pais = detectarPais(jugador);
     const flagEmoji = pais ? flag(pais) : '⚽';
     return `
       <div class="resto-card">
         <div class="resto-pos">${rank}°</div>
         <div class="resto-flag">${flagEmoji}</div>
-        <div class="resto-name">${escapeHtml(jugador)}</div>
+        <div class="resto-name">${escapeHtml(limpiarNombre(jugador))}</div>
         <div class="resto-votes">${personas.length} voto${personas.length === 1 ? '' : 's'}</div>
         <div class="resto-persona">${personas.map(escapeHtml).join(', ')}</div>
       </div>
