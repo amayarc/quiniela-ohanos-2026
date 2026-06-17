@@ -479,10 +479,17 @@ function renderBotaActual() {
     cont.innerHTML = '';
     return;
   }
+  // Set de jugadores que tienen votos en la quiniela (goleadores apostados)
+  const conVoto = new Set();
+  (DATA.bonus || []).forEach(b => {
+    if (b.goleador) conVoto.add(limpiarNombre(b.goleador).toLowerCase());
+  });
+
   const lideres = bota.lideres.map(l => ({
-    nombre: l.nombre,
-    pais:   l.pais,
-    goles:  (l.goles != null ? l.goles : bota.goles) || 0,
+    nombre:    l.nombre,
+    pais:      l.pais,
+    goles:     (l.goles != null ? l.goles : bota.goles) || 0,
+    tieneVoto: conVoto.has(limpiarNombre(l.nombre).toLowerCase()),
   })).sort((a, b) => b.goles - a.goles || a.nombre.localeCompare(b.nombre));
 
   const n = lideres.length;
@@ -493,6 +500,11 @@ function renderBotaActual() {
     </div>
     <div class="bota-table-wrap">
       <table class="bota-table">
+        <colgroup>
+          <col class="c-pais">
+          <col class="c-jugador">
+          <col class="c-goles">
+        </colgroup>
         <thead>
           <tr>
             <th class="c">País</th>
@@ -504,7 +516,7 @@ function renderBotaActual() {
           ${lideres.map(l => `
             <tr>
               <td class="col-pais">${flag(l.pais)}</td>
-              <td class="col-jugador">${escapeHtml(l.nombre)}</td>
+              <td class="col-jugador">${escapeHtml(l.nombre)}${l.tieneVoto ? '<span class="bota-star" title="Tiene voto en la quiniela">★</span>' : ''}</td>
               <td class="col-goles">${l.goles}</td>
             </tr>
           `).join('')}

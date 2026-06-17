@@ -606,7 +606,11 @@ main {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.95rem;
+  table-layout: fixed;
 }
+.bota-table col.c-pais    { width: 70px; }
+.bota-table col.c-jugador { width: auto; }
+.bota-table col.c-goles   { width: 80px; }
 .bota-table th {
   text-align: left;
   font-size: 0.72rem;
@@ -614,13 +618,13 @@ main {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #5C3B00;
-  padding: 8px 12px 6px;
+  padding: 8px 14px 6px;
   border-bottom: 1px solid rgba(26, 60, 110, 0.15);
 }
 .bota-table th.r { text-align: right; }
 .bota-table th.c { text-align: center; }
 .bota-table td {
-  padding: 9px 12px;
+  padding: 9px 14px;
   border-bottom: 1px solid rgba(26, 60, 110, 0.08);
   vertical-align: middle;
 }
@@ -629,16 +633,26 @@ main {
   font-weight: 700;
   letter-spacing: 0.5px;
   color: #1A3C6E;
-  width: 60px;
   text-align: center;
 }
-.bota-table .col-jugador { font-weight: 700; color: #1A3C6E; }
+.bota-table .col-jugador {
+  font-weight: 700;
+  color: #1A3C6E;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .bota-table .col-goles {
   font-weight: 900;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   text-align: center;
   color: #1A3C6E;
-  width: 60px;
+}
+.bota-star {
+  color: #C44E15;
+  font-size: 1.05em;
+  margin-left: 5px;
+  text-shadow: 0 0 1px rgba(255,255,255,0.4);
 }
 .bota-actual-footer {
   margin-top: 10px;
