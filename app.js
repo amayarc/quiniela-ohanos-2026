@@ -15,10 +15,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (fb) {
           if (fb.resultados) {
             Object.entries(fb.resultados).forEach(([num, ganador]) => {
+              if (!ganador) return; // ignorar índices null (Firebase array)
               const p = DATA.partidos.find(x => x.num === Number(num));
               if (p) {
-                p.ganador_real = ganador || null;
-                p.jugado = !!ganador;
+                p.ganador_real = ganador;
+                p.jugado = true;
               }
             });
           }
@@ -706,8 +707,37 @@ async function guardarEnFirebase() {
   const msg = document.getElementById('save-msg');
   const btn = document.getElementById('btn-save');
   btn.disabled = true;
-  msg.textContent = '⏳ Guardando en la nube...';
+  msg.textContent = '⏳ Sincronizando con la nube...';
   msg.className = 'save-msg pending';
+
+  // PROTECCIÓN: re-leer Firebase antes de guardar, para preservar datos
+  // que estén en la nube pero que el panel no tenga cargados.
+  let remote = null;
+  try {
+    const fbRes = await fetch(FIREBASE_URL + '/live.json?_=' + Date.now());
+    if (!fbRes.ok) throw new Error('HTTP ' + fbRes.status);
+    remote = await fbRes.json();
+  } catch (e) {
+    msg.textContent = '❌ No se pudo conectar a la nube. Revisa tu internet y reintenta.';
+    msg.className = 'save-msg err';
+    btn.disabled = false;
+    return;
+  }
+
+  // Mergear: si Firebase tiene resultados que CAPT no tiene, agregarlos
+  if (remote && remote.resultados) {
+    const entries = Array.isArray(remote.resultados)
+      ? remote.resultados.map((r, i) => [String(i), r])
+      : Object.entries(remote.resultados);
+    entries.forEach(([num, ganador]) => {
+      if (!ganador) return;
+      const p = CAPT.partidos.find(x => x.num === Number(num));
+      if (p && !p.ganador_real) {
+        p.ganador_real = ganador;
+        p.jugado = true;
+      }
+    });
+  }
 
   CAPT.meta.campeon_real  = (CAPT.meta.campeon_real  || '').trim() || null;
   CAPT.meta.goleador_real = (CAPT.meta.goleador_real || '').trim() || null;
