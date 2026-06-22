@@ -30,6 +30,7 @@
     <button class="tab" data-tab="por-persona">👤 Por persona</button>
     <button class="tab" data-tab="campeon">🏆 Campeón</button>
     <button class="tab" data-tab="goleador">⚽ Goleador</button>
+    <button class="tab" data-tab="mundial">📊 Mundial</button>
     <button class="tab" data-tab="reglas">📋 Reglas</button>
     <button class="tab" data-tab="capturar">🔐 Capturar</button>
   </nav>
@@ -107,6 +108,23 @@
       <div class="votos-divider">📊 Votos de los participantes</div>
       <div id="goleador-podium" class="goleador-podium"></div>
       <div id="goleador-resto" class="goleador-resto"></div>
+    </section>
+
+    <!-- Mundial: cómo va -->
+    <section id="tab-mundial" class="tab-content">
+      <div class="hero-bonus hero-blue">
+        <div class="hero-deco-l">⚽</div>
+        <div class="hero-deco-r">🏆</div>
+        <div class="hero-title">Cómo va el</div>
+        <h2 class="hero-h2">MUNDIAL 2026 <span class="hero-h2-sub">en vivo</span></h2>
+        <p class="hero-sub" id="mundial-stats">Cargando...</p>
+      </div>
+      <div class="sub-tabs">
+        <button class="sub-tab mundial-sub active" data-msub="grupos">📋 Grupos</button>
+        <button class="sub-tab mundial-sub" data-msub="bracket">🏆 Bracket</button>
+      </div>
+      <div id="mundial-grupos" class="mundial-sub-content active"></div>
+      <div id="mundial-bracket" class="mundial-sub-content"></div>
     </section>
 
     <!-- Reglas -->

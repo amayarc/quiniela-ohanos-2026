@@ -1,5 +1,8 @@
 // ========= App OHANOS =========
 const FIREBASE_URL = "https://quiniela-ohanos-2026-default-rtdb.firebaseio.com";
+// Firebase de DES: solo se LEE para mostrar marcadores reales del Mundial en la pestaña 'Mundial'.
+// La quiniela OHANOS no se modifica con esto.
+const DES_FIREBASE_URL = "https://quiniela-des-mpp-2026-default-rtdb.firebaseio.com";
 let DATA = null;
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -32,9 +35,34 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.warn('No se pudo leer Firebase, usando solo JSON:', fbErr);
     }
 
+    // Leer marcadores reales del Firebase de DES (para tabla de grupos y bracket).
+    // Esto NO afecta los puntos de OHANOS (que se calculan con ganador_real).
+    try {
+      const desRes = await fetch(DES_FIREBASE_URL + '/live.json?_=' + Date.now());
+      if (desRes.ok) {
+        const desFb = await desRes.json();
+        if (desFb && desFb.resultados) {
+          const entries = Array.isArray(desFb.resultados)
+            ? desFb.resultados.map((r, i) => [String(i), r])
+            : Object.entries(desFb.resultados);
+          entries.forEach(([num, r]) => {
+            if (!r) return;
+            const p = DATA.partidos.find(x => x.num === Number(num));
+            if (p) {
+              p.gol_local = (r.l != null) ? Number(r.l) : null;
+              p.gol_visit = (r.v != null) ? Number(r.v) : null;
+            }
+          });
+        }
+      }
+    } catch (e) {
+      console.warn('No se pudo leer Firebase DES para tabla del Mundial:', e);
+    }
+
     recalcularTodo(DATA);
 
     initTabs();
+    initSubTabsMundial();
     renderHeaderPills();
     renderClasificacion();
     renderPartidos();
@@ -42,6 +70,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderCampeon();
     renderBotaActual();
     renderGoleador();
+    renderMundial();
     initCapturar();
   } catch (e) {
     console.error('Error cargando data.json:', e);
@@ -574,6 +603,203 @@ function renderGoleador() {
       </div>
     `;
   }).join('');
+}
+
+// ========= Mundial: Grupos y Bracket =========
+const ELIMINATORIAS = [
+  { fase: 'R32', num: 1, fecha: 'Dom 28 Jun', hora: '13:00', sede: 'Estadio Ciudad de México', clave_a: '1A', clave_b: '3°-1' },
+  { fase: 'R32', num: 2, fecha: 'Dom 28 Jun', hora: '17:00', sede: 'Estadio Atlanta',           clave_a: '1B', clave_b: '3°-2' },
+  { fase: 'R32', num: 3, fecha: 'Dom 28 Jun', hora: '20:00', sede: 'Estadio Toronto',           clave_a: '1C', clave_b: '3°-3' },
+  { fase: 'R32', num: 4, fecha: 'Lun 29 Jun', hora: '13:00', sede: 'Estadio Houston',           clave_a: '1D', clave_b: '3°-4' },
+  { fase: 'R32', num: 5, fecha: 'Lun 29 Jun', hora: '17:00', sede: 'Estadio Filadelfia',        clave_a: '1E', clave_b: '3°-5' },
+  { fase: 'R32', num: 6, fecha: 'Lun 29 Jun', hora: '20:00', sede: 'Estadio Boston',            clave_a: '1F', clave_b: '3°-6' },
+  { fase: 'R32', num: 7, fecha: 'Mar 30 Jun', hora: '13:00', sede: 'Estadio Nueva York/NJ',     clave_a: '1G', clave_b: '3°-7' },
+  { fase: 'R32', num: 8, fecha: 'Mar 30 Jun', hora: '17:00', sede: 'Estadio Dallas',            clave_a: '1H', clave_b: '3°-8' },
+  { fase: 'R32', num: 9, fecha: 'Mar 30 Jun', hora: '20:00', sede: 'BC Place Vancouver',        clave_a: '2A', clave_b: '2B' },
+  { fase: 'R32', num: 10, fecha: 'Mié 1 Jul', hora: '13:00', sede: 'Estadio Seattle',           clave_a: '2C', clave_b: '2D' },
+  { fase: 'R32', num: 11, fecha: 'Mié 1 Jul', hora: '17:00', sede: 'Estadio Los Ángeles',       clave_a: '2E', clave_b: '2F' },
+  { fase: 'R32', num: 12, fecha: 'Mié 1 Jul', hora: '20:00', sede: 'Estadio San Francisco',     clave_a: '2G', clave_b: '2H' },
+  { fase: 'R32', num: 13, fecha: 'Jue 2 Jul', hora: '13:00', sede: 'Estadio Kansas City',       clave_a: '2I', clave_b: '2J' },
+  { fase: 'R32', num: 14, fecha: 'Jue 2 Jul', hora: '17:00', sede: 'Estadio Miami',             clave_a: '2K', clave_b: '2L' },
+  { fase: 'R32', num: 15, fecha: 'Jue 2 Jul', hora: '20:00', sede: 'Estadio Monterrey',         clave_a: '1I', clave_b: '1J' },
+  { fase: 'R32', num: 16, fecha: 'Jue 2 Jul', hora: '22:00', sede: 'Estadio Guadalajara',       clave_a: '1K', clave_b: '1L' },
+  { fase: 'OCT', num: 17, fecha: 'Sáb 4 Jul', hora: '13:00', sede: 'Estadio Filadelfia',        clave_a: 'G-R32-1', clave_b: 'G-R32-2' },
+  { fase: 'OCT', num: 18, fecha: 'Sáb 4 Jul', hora: '17:00', sede: 'Estadio Nueva York/NJ',     clave_a: 'G-R32-3', clave_b: 'G-R32-4' },
+  { fase: 'OCT', num: 19, fecha: 'Dom 5 Jul', hora: '13:00', sede: 'Estadio Boston',            clave_a: 'G-R32-5', clave_b: 'G-R32-6' },
+  { fase: 'OCT', num: 20, fecha: 'Dom 5 Jul', hora: '17:00', sede: 'Estadio Atlanta',           clave_a: 'G-R32-7', clave_b: 'G-R32-8' },
+  { fase: 'OCT', num: 21, fecha: 'Lun 6 Jul', hora: '13:00', sede: 'Estadio Houston',           clave_a: 'G-R32-9', clave_b: 'G-R32-10' },
+  { fase: 'OCT', num: 22, fecha: 'Lun 6 Jul', hora: '17:00', sede: 'Estadio Los Ángeles',       clave_a: 'G-R32-11', clave_b: 'G-R32-12' },
+  { fase: 'OCT', num: 23, fecha: 'Mar 7 Jul', hora: '15:00', sede: 'Estadio Ciudad de México',  clave_a: 'G-R32-13', clave_b: 'G-R32-14' },
+  { fase: 'OCT', num: 24, fecha: 'Mar 7 Jul', hora: '19:00', sede: 'BC Place Vancouver',        clave_a: 'G-R32-15', clave_b: 'G-R32-16' },
+  { fase: 'CUA', num: 25, fecha: 'Jue 9 Jul', hora: '14:00',  sede: 'Estadio Boston',           clave_a: 'G-OCT-17', clave_b: 'G-OCT-18' },
+  { fase: 'CUA', num: 26, fecha: 'Jue 9 Jul', hora: '18:00',  sede: 'Estadio Los Ángeles',      clave_a: 'G-OCT-19', clave_b: 'G-OCT-20' },
+  { fase: 'CUA', num: 27, fecha: 'Vie 10 Jul', hora: '14:00', sede: 'Estadio Kansas City',      clave_a: 'G-OCT-21', clave_b: 'G-OCT-22' },
+  { fase: 'CUA', num: 28, fecha: 'Sáb 11 Jul', hora: '14:00', sede: 'Estadio Miami',            clave_a: 'G-OCT-23', clave_b: 'G-OCT-24' },
+  { fase: 'SEM', num: 29, fecha: 'Mar 14 Jul', hora: '18:00', sede: 'Estadio Dallas',           clave_a: 'G-CUA-25', clave_b: 'G-CUA-26' },
+  { fase: 'SEM', num: 30, fecha: 'Mié 15 Jul', hora: '18:00', sede: 'Estadio Atlanta',          clave_a: 'G-CUA-27', clave_b: 'G-CUA-28' },
+  { fase: '3ER', num: 31, fecha: 'Sáb 18 Jul', hora: '14:00', sede: 'Estadio Miami',            clave_a: 'P-SEM-29', clave_b: 'P-SEM-30' },
+  { fase: 'FIN', num: 32, fecha: 'Dom 19 Jul', hora: '14:00', sede: 'Estadio Nueva York/NJ',    clave_a: 'G-SEM-29', clave_b: 'G-SEM-30' },
+];
+
+function initSubTabsMundial() {
+  document.querySelectorAll('.mundial-sub').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const sub = btn.dataset.msub;
+      document.querySelectorAll('.mundial-sub').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.mundial-sub-content').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('mundial-' + sub).classList.add('active');
+    });
+  });
+}
+
+function renderMundial() {
+  if (!document.getElementById('mundial-grupos')) return;
+  const stats = DATA.meta || {};
+  const el = document.getElementById('mundial-stats');
+  if (el) el.textContent = `${stats.partidos_jugados || 0} / ${stats.total_partidos || 72} partidos · Fase de Grupos`;
+  renderMundialGrupos();
+  renderMundialBracket();
+}
+
+function calcularGrupos() {
+  const equipos = {};
+  DATA.partidos.forEach(p => {
+    if (p.num > 72) return;
+    [p.local, p.visitante].forEach(eq => {
+      if (!equipos[eq]) equipos[eq] = { equipo: eq, grupo: p.grupo, pj: 0, g: 0, e: 0, perd: 0, gf: 0, gc: 0, dg: 0, pts: 0 };
+    });
+  });
+  DATA.partidos.forEach(p => {
+    if (p.num > 72) return;
+    if (p.gol_local == null || p.gol_visit == null) return;
+    const local = equipos[p.local];
+    const visit = equipos[p.visitante];
+    local.pj++; visit.pj++;
+    local.gf += p.gol_local; local.gc += p.gol_visit;
+    visit.gf += p.gol_visit; visit.gc += p.gol_local;
+    if (p.gol_local > p.gol_visit) { local.g++; local.pts += 3; visit.perd++; }
+    else if (p.gol_local < p.gol_visit) { visit.g++; visit.pts += 3; local.perd++; }
+    else { local.e++; visit.e++; local.pts++; visit.pts++; }
+  });
+  Object.values(equipos).forEach(e => e.dg = e.gf - e.gc);
+  const grupos = {};
+  Object.values(equipos).forEach(e => {
+    const key = (e.grupo || '').replace('Grupo ', '');
+    if (!grupos[key]) grupos[key] = [];
+    grupos[key].push(e);
+  });
+  Object.values(grupos).forEach(arr =>
+    arr.sort((a, b) => b.pts - a.pts || b.dg - a.dg || b.gf - a.gf || a.equipo.localeCompare(b.equipo))
+  );
+  return grupos;
+}
+
+function renderMundialGrupos() {
+  const cont = document.getElementById('mundial-grupos');
+  if (!cont) return;
+  const grupos = calcularGrupos();
+  const letras = Object.keys(grupos).sort();
+  cont.innerHTML = `
+    <div class="grupos-grid">
+      ${letras.map(letra => {
+        const tabla = grupos[letra];
+        return `
+          <div class="grupo-card">
+            <h3>Grupo ${letra}</h3>
+            <table class="grupo-table">
+              <thead>
+                <tr><th>#</th><th>Equipo</th><th>PJ</th><th>DG</th><th>Pts</th></tr>
+              </thead>
+              <tbody>
+                ${tabla.map((e, i) => {
+                  const cls = i < 2 ? 'clasif' : (i === 2 ? 'tercero' : 'eliminado');
+                  const dgClass = e.dg > 0 ? 'dg-plus' : (e.dg < 0 ? 'dg-minus' : '');
+                  const dgTxt = (e.dg > 0 ? '+' : '') + e.dg;
+                  return `
+                    <tr class="${cls}">
+                      <td style="text-align:center">${i+1}</td>
+                      <td><span class="col-flag">${flag(e.equipo)}</span>${escapeHtml(e.equipo)}</td>
+                      <td>${e.pj}</td>
+                      <td class="${dgClass}">${dgTxt}</td>
+                      <td>${e.pts}</td>
+                    </tr>
+                  `;
+                }).join('')}
+              </tbody>
+            </table>
+          </div>
+        `;
+      }).join('')}
+    </div>
+    <div class="grupos-leyenda">
+      <span><i style="background:#D4EDDA"></i>Clasifican directo (1° y 2°)</span>
+      <span><i style="background:#FFF6D9"></i>3° puede clasificar como mejor tercero</span>
+      <span><i style="background:#E5E7EB"></i>Eliminado</span>
+    </div>
+  `;
+}
+
+function renderMundialBracket() {
+  const cont = document.getElementById('mundial-bracket');
+  if (!cont) return;
+  const grupos = calcularGrupos();
+  const resolverClave = (clave) => {
+    if (!clave) return null;
+    const m = clave.match(/^([12])([A-L])$/);
+    if (m) {
+      const pos = Number(m[1]) - 1;
+      const letra = m[2];
+      return grupos[letra]?.[pos]?.equipo || null;
+    }
+    return null;
+  };
+  const fases = [
+    { key: 'R32', label: 'R32',     info: '28-30 jun · 1-2 jul' },
+    { key: 'OCT', label: 'Octavos', info: '4-7 jul' },
+    { key: 'CUA', label: 'Cuartos', info: '9-11 jul' },
+    { key: 'SEM', label: 'Semis',   info: '14-15 jul' },
+    { key: 'FIN', label: '🏆 Final', info: '19 jul' },
+  ];
+  cont.innerHTML = `
+    <div class="bracket-wrap">
+      <div class="bracket-board">
+        ${fases.map(f => `
+          <div class="bracket-col">
+            <div class="bracket-col-title">${f.label}</div>
+            <div class="bracket-stage-info">${f.info}</div>
+            ${ELIMINATORIAS.filter(p => p.fase === f.key).map(p => {
+              const eqA = resolverClave(p.clave_a);
+              const eqB = resolverClave(p.clave_b);
+              const labelA = eqA || `<span class="bracket-pending-team">${p.clave_a}</span>`;
+              const labelB = eqB || `<span class="bracket-pending-team">${p.clave_b}</span>`;
+              const isFinal = f.key === 'FIN' ? ' final' : '';
+              return `
+                <div class="bracket-match pending${isFinal}">
+                  <div class="bracket-team">
+                    <span class="bracket-flag">${eqA ? flag(eqA) : ''}</span>
+                    <span class="bracket-name">${eqA ? escapeHtml(eqA) : labelA}</span>
+                    <span class="bracket-score">—</span>
+                  </div>
+                  <div class="bracket-team">
+                    <span class="bracket-flag">${eqB ? flag(eqB) : ''}</span>
+                    <span class="bracket-name">${eqB ? escapeHtml(eqB) : labelB}</span>
+                    <span class="bracket-score">—</span>
+                  </div>
+                  <div class="bracket-meta">📅 ${p.fecha} · ${p.hora} · ${escapeHtml(p.sede)}</div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        `).join('')}
+      </div>
+    </div>
+    <div class="bracket-leyenda">
+      <span><i style="background:#2E7D32"></i>Ya jugado</span>
+      <span><i style="background:#F26522"></i>Próximo partido</span>
+      <span><i style="background:#B5B5B5"></i>Pendiente (depende de fase anterior)</span>
+    </div>
+  `;
 }
 
 // ========= Capturar =========
