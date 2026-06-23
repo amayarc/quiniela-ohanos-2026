@@ -692,6 +692,17 @@ function calcularGrupos() {
   Object.values(grupos).forEach(arr =>
     arr.sort((a, b) => b.pts - a.pts || b.dg - a.dg || b.gf - a.gf || a.equipo.localeCompare(b.equipo))
   );
+  Object.values(grupos).forEach(tabla => {
+    tabla.forEach(eq => {
+      const ptsMax = eq.pts + 3 * (3 - eq.pj);
+      const otros = tabla.filter(o => o.equipo !== eq.equipo);
+      const puedenSuperarme = otros.filter(o => (o.pts + 3 * (3 - o.pj)) > eq.pts).length;
+      const arribaInalcanzable = otros.filter(o => o.pts > ptsMax).length;
+      if (puedenSuperarme <= 1) eq.estado = 'confirmado';
+      else if (arribaInalcanzable >= 2) eq.estado = 'eliminado';
+      else eq.estado = 'en-curso';
+    });
+  });
   return grupos;
 }
 
@@ -713,13 +724,19 @@ function renderMundialGrupos() {
               </thead>
               <tbody>
                 ${tabla.map((e, i) => {
-                  const cls = i < 2 ? 'clasif' : (i === 2 ? 'tercero' : 'eliminado');
+                  let cls;
+                  if (e.estado === 'confirmado') cls = 'clasif confirmado';
+                  else if (e.estado === 'eliminado') cls = 'eliminado';
+                  else if (i < 2) cls = 'clasif';
+                  else if (i === 2) cls = 'tercero';
+                  else cls = 'eliminado';
                   const dgClass = e.dg > 0 ? 'dg-plus' : (e.dg < 0 ? 'dg-minus' : '');
                   const dgTxt = (e.dg > 0 ? '+' : '') + e.dg;
+                  const badge = e.estado === 'confirmado' ? ' <span class="badge-pasa">✓ PASA</span>' : '';
                   return `
                     <tr class="${cls}">
                       <td style="text-align:center">${i+1}</td>
-                      <td><span class="col-flag">${flag(e.equipo)}</span>${escapeHtml(e.equipo)}</td>
+                      <td><span class="col-flag">${flag(e.equipo)}</span>${escapeHtml(e.equipo)}${badge}</td>
                       <td>${e.pj}</td>
                       <td class="${dgClass}">${dgTxt}</td>
                       <td>${e.pts}</td>
@@ -750,9 +767,25 @@ function renderMundialBracket() {
     if (m) {
       const pos = Number(m[1]) - 1;
       const letra = m[2];
-      return grupos[letra]?.[pos]?.equipo || null;
+      const eq = grupos[letra]?.[pos];
+      if (!eq) return null;
+      return { nombre: eq.equipo, confirmado: eq.estado === 'confirmado' };
     }
     return null;
+  };
+  const labelClave = (clave) => {
+    const m = clave.match(/^([12])([A-L])$/);
+    if (m) return `${m[1]}° Grupo ${m[2]}`;
+    const m3 = clave.match(/^3°-(\d+)$/);
+    if (m3) return `Mejor 3° #${m3[1]}`;
+    const mg = clave.match(/^G-(R32|OCT|CUA|SEM)-(\d+)$/);
+    if (mg) {
+      const faseName = {R32:'R32', OCT:'Octavos', CUA:'Cuartos', SEM:'Semis'}[mg[1]];
+      return `Ganador ${faseName} #${mg[2]}`;
+    }
+    const mp = clave.match(/^P-SEM-(\d+)$/);
+    if (mp) return `Perdedor Semi #${mp[1]}`;
+    return clave;
   };
   const fases = [
     { key: 'R32', label: 'R32',     info: '28-30 jun · 1-2 jul' },
@@ -771,19 +804,21 @@ function renderMundialBracket() {
             ${ELIMINATORIAS.filter(p => p.fase === f.key).map(p => {
               const eqA = resolverClave(p.clave_a);
               const eqB = resolverClave(p.clave_b);
-              const labelA = eqA || `<span class="bracket-pending-team">${p.clave_a}</span>`;
-              const labelB = eqB || `<span class="bracket-pending-team">${p.clave_b}</span>`;
+              const renderTeam = (eq, claveOriginal) => {
+                if (!eq) return `<span class="bracket-flag"></span><span class="bracket-name"><span class="bracket-pending-team">${labelClave(claveOriginal)}</span></span>`;
+                const cls = eq.confirmado ? 'bracket-name confirmed' : 'bracket-name provisional';
+                const star = eq.confirmado ? ' <span class="bracket-conf">✓</span>' : '';
+                return `<span class="bracket-flag">${flag(eq.nombre)}</span><span class="${cls}">${escapeHtml(eq.nombre)}${star}</span>`;
+              };
               const isFinal = f.key === 'FIN' ? ' final' : '';
               return `
                 <div class="bracket-match pending${isFinal}">
                   <div class="bracket-team">
-                    <span class="bracket-flag">${eqA ? flag(eqA) : ''}</span>
-                    <span class="bracket-name">${eqA ? escapeHtml(eqA) : labelA}</span>
+                    ${renderTeam(eqA, p.clave_a)}
                     <span class="bracket-score">—</span>
                   </div>
                   <div class="bracket-team">
-                    <span class="bracket-flag">${eqB ? flag(eqB) : ''}</span>
-                    <span class="bracket-name">${eqB ? escapeHtml(eqB) : labelB}</span>
+                    ${renderTeam(eqB, p.clave_b)}
                     <span class="bracket-score">—</span>
                   </div>
                   <div class="bracket-meta">📅 ${p.fecha} · ${p.hora} · ${escapeHtml(p.sede)}</div>

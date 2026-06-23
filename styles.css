@@ -1158,7 +1158,24 @@ main {
 }
 .grupo-table tr.clasif td:nth-child(2) { font-weight: 700; }
 .grupo-table tr.tercero { background: linear-gradient(90deg, #FFF6D9 0%, transparent 100%); }
-.grupo-table tr.eliminado { opacity: 0.6; }
+.grupo-table tr.eliminado { opacity: 0.5; }
+.grupo-table tr.eliminado td:nth-child(2) { text-decoration: line-through; }
+.grupo-table tr.confirmado {
+  background: linear-gradient(90deg, #C6F0D2 0%, #E5F8EB 100%);
+  font-weight: 700;
+}
+.badge-pasa {
+  display: inline-block;
+  background: #2E7D32;
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 999px;
+  margin-left: 5px;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
 .grupo-table .dg-plus { color: #2E7D32; }
 .grupo-table .dg-minus { color: #C44E15; }
 
@@ -1245,6 +1262,22 @@ main {
   font-size: 0.72rem;
 }
 .bracket-name { flex: 1; padding: 0 6px; font-weight: 600; }
+.bracket-name.confirmed { color: #1D5128; font-weight: 800; }
+.bracket-name.provisional { color: var(--blue); font-style: italic; }
+.bracket-conf {
+  display: inline-block;
+  background: #2E7D32;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 4px;
+  vertical-align: middle;
+}
 .bracket-score {
   font-weight: 800;
   color: var(--blue);
