@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initSubTabsMundial();
     renderHeaderPills();
     renderClasificacion();
+    initFaseTabs();
     renderPartidos();
     renderPorPersona();
     renderCampeon();
@@ -154,6 +155,11 @@ function renderHeaderPills() {
     `${DATA.meta.partidos_jugados}/${DATA.meta.total_partidos} jugados`;
   document.getElementById('pill-participantes').textContent =
     `${DATA.meta.total_participantes} participantes`;
+  const sub = document.querySelector('.subtitle');
+  if (sub && DATA.meta.fase) {
+    const pref = (sub.textContent.split('·')[0] || '').trim();
+    sub.textContent = (pref ? pref + ' · ' : '') + DATA.meta.fase;
+  }
 }
 
 // ========= Util =========
@@ -283,22 +289,59 @@ function renderClasificacion() {
   }).join('');
 }
 
-// ========= Partidos =========
+// ========= Partidos (con pestañas por fase) =========
+let CURRENT_FASE = null;
+
+function faseDefault() {
+  const hoy = getHoyIso();
+  const fasesHoy = DATA.partidos.filter(p => p.fecha_iso === hoy).map(p => p.fase);
+  if (fasesHoy.length) return fasesHoy[fasesHoy.length - 1];
+  const fases = DATA.meta.fases || [];
+  for (let i = fases.length - 1; i >= 0; i--) {
+    if (DATA.partidos.some(p => p.fase === fases[i].key)) return fases[i].key;
+  }
+  return fases[0]?.key || null;
+}
+
+function initFaseTabs() {
+  const cont = document.getElementById('fase-tabs');
+  const fases = DATA.meta.fases || [];
+  if (!cont) return;
+  if (fases.length <= 1) { cont.style.display = 'none'; CURRENT_FASE = fases[0]?.key || null; return; }
+  CURRENT_FASE = faseDefault();
+  cont.innerHTML = fases.map(f =>
+    `<button class="sub-tab fase-tab${f.key === CURRENT_FASE ? ' active' : ''}" data-fase="${f.key}">${escapeHtml(f.label)}</button>`
+  ).join('');
+  cont.querySelectorAll('.fase-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      cont.querySelectorAll('.fase-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      CURRENT_FASE = btn.dataset.fase;
+      const fe = document.getElementById('filtro-dia'); if (fe) fe.value = '';
+      renderPartidos('');
+    });
+  });
+}
+
 function renderPartidos(filtroDia = '') {
   const cont = document.getElementById('partidos-list');
   const filtroEl = document.getElementById('filtro-dia');
+  const fase = CURRENT_FASE;
 
-  if (filtroEl.options.length <= 1) {
-    [...new Set(DATA.partidos.map(p => p.fecha))].forEach(d => {
-      const o = document.createElement('option');
-      o.value = d; o.textContent = d;
-      filtroEl.appendChild(o);
-    });
-    filtroEl.addEventListener('change', e => renderPartidos(e.target.value));
+  const partidosFase = DATA.partidos.filter(p => !fase || p.fase === fase);
+
+  if (filtroEl) {
+    const dias = [...new Set(partidosFase.map(p => p.fecha))];
+    const actuales = Array.from(filtroEl.options).slice(1).map(o => o.value);
+    if (actuales.join('|') !== dias.join('|')) {
+      filtroEl.innerHTML = '<option value="">Todos</option>' +
+        dias.map(d => `<option value="${escapeHtml(d)}">${escapeHtml(d)}</option>`).join('');
+      filtroEl.onchange = e => renderPartidos(e.target.value);
+    }
   }
 
   const hoy = getHoyIso();
-  const partidos = DATA.partidos.filter(p => !filtroDia || p.fecha === filtroDia);
+  const partidos = partidosFase.filter(p => !filtroDia || p.fecha === filtroDia);
   const partidosHoy = filtroDia ? [] : partidos.filter(p => p.fecha_iso === hoy);
   const partidosResto = filtroDia ? partidos : partidos.filter(p => p.fecha_iso !== hoy);
 
@@ -323,6 +366,7 @@ function renderPartidos(filtroDia = '') {
       ${g.list.map(p => renderPartidoCard(p)).join('')}
     </div>
   `).join('');
+  if (!html) html = '<p style="text-align:center;color:var(--muted);padding:24px;">No hay partidos en esta fase.</p>';
   cont.innerHTML = html;
   cont.querySelectorAll('.partido-card').forEach(card => {
     card.addEventListener('click', () => card.classList.toggle('open'));
@@ -409,12 +453,20 @@ function renderPersonaDetalle(slot) {
     byDay[p.fecha].push({ partido: p, pred });
   });
 
-  const daysHtml = Object.entries(byDay).map(([dia, list]) => `
+  let lastFaseP = null;
+  const daysHtml = Object.entries(byDay).map(([dia, list]) => {
+    const faseLbl = list[0]?.partido?.fase_label || '';
+    let banner = '';
+    if (faseLbl && faseLbl !== lastFaseP) {
+      banner = `<h2 class="fase-banner">${escapeHtml(faseLbl)}</h2>`;
+      lastFaseP = faseLbl;
+    }
+    return banner + `
     <div class="partidos-day">
       <h3>${dia}</h3>
       ${list.map(({partido, pred}) => renderPersonaPartido(partido, pred)).join('')}
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 
   cont.innerHTML = headerHtml + daysHtml;
 }
@@ -693,14 +745,23 @@ function calcularGrupos() {
     arr.sort((a, b) => b.pts - a.pts || b.dg - a.dg || b.gf - a.gf || a.equipo.localeCompare(b.equipo))
   );
   Object.values(grupos).forEach(tabla => {
-    tabla.forEach(eq => {
-      const ptsMax = eq.pts + 3 * (3 - eq.pj);
-      const otros = tabla.filter(o => o.equipo !== eq.equipo);
-      const puedenSuperarme = otros.filter(o => (o.pts + 3 * (3 - o.pj)) > eq.pts).length;
-      const arribaInalcanzable = otros.filter(o => o.pts > ptsMax).length;
-      if (puedenSuperarme <= 1) eq.estado = 'confirmado';
-      else if (arribaInalcanzable >= 2) eq.estado = 'eliminado';
-      else eq.estado = 'en-curso';
+    const grupoTerminado = tabla.every(eq => eq.pj === 3);
+    tabla.forEach((eq, idx) => {
+      if (grupoTerminado) {
+        if (idx <= 1)       eq.estado = 'confirmado';
+        else if (idx === 2) eq.estado = 'tercero';
+        else                eq.estado = 'eliminado';
+        eq.posicion_fija = true;
+      } else {
+        const ptsMax = eq.pts + 3 * (3 - eq.pj);
+        const otros = tabla.filter(o => o.equipo !== eq.equipo);
+        const puedenSuperarme = otros.filter(o => (o.pts + 3 * (3 - o.pj)) > eq.pts).length;
+        const arribaInalcanzable = otros.filter(o => o.pts > ptsMax).length;
+        if (puedenSuperarme <= 1)         eq.estado = 'confirmado';
+        else if (arribaInalcanzable >= 2) eq.estado = 'eliminado';
+        else                              eq.estado = 'en-curso';
+        eq.posicion_fija = false;
+      }
     });
   });
   return grupos;
@@ -732,7 +793,9 @@ function renderMundialGrupos() {
                   else cls = 'eliminado';
                   const dgClass = e.dg > 0 ? 'dg-plus' : (e.dg < 0 ? 'dg-minus' : '');
                   const dgTxt = (e.dg > 0 ? '+' : '') + e.dg;
-                  const badge = e.estado === 'confirmado' ? ' <span class="badge-pasa">✓ PASA</span>' : '';
+                  let badge = '';
+                  if (e.estado === 'confirmado') badge = ' <span class="badge-pasa">✓ PASA</span>';
+                  else if (cls === 'tercero') badge = ' <span class="badge-tercero">POSIBLE 3°</span>';
                   return `
                     <tr class="${cls}">
                       <td style="text-align:center">${i+1}</td>
@@ -769,7 +832,7 @@ function renderMundialBracket() {
       const letra = m[2];
       const eq = grupos[letra]?.[pos];
       if (!eq) return null;
-      return { nombre: eq.equipo, confirmado: eq.estado === 'confirmado' };
+      return { nombre: eq.equipo, confirmado: eq.posicion_fija === true };
     }
     return null;
   };
@@ -787,6 +850,30 @@ function renderMundialBracket() {
     if (mp) return `Perdedor Semi #${mp[1]}`;
     return clave;
   };
+  const renderTeam = (eq, claveOriginal) => {
+    if (!eq) return `<span class="bracket-flag"></span><span class="bracket-name"><span class="bracket-pending-team">${labelClave(claveOriginal)}</span></span>`;
+    const cls = eq.confirmado ? 'bracket-name confirmed' : 'bracket-name provisional';
+    const star = eq.confirmado ? ' <span class="bracket-conf">✓</span>' : '';
+    return `<span class="bracket-flag">${flag(eq.nombre)}</span><span class="${cls}">${escapeHtml(eq.nombre)}${star}</span>`;
+  };
+  const renderMatch = (p, isFinal) => {
+    const eqA = resolverClave(p.clave_a);
+    const eqB = resolverClave(p.clave_b);
+    return `
+      <div class="bracket-match pending${isFinal ? ' final' : ''}">
+        <div class="bracket-team">
+          ${renderTeam(eqA, p.clave_a)}
+          <span class="bracket-score">—</span>
+        </div>
+        <div class="bracket-team">
+          ${renderTeam(eqB, p.clave_b)}
+          <span class="bracket-score">—</span>
+        </div>
+        <div class="bracket-meta">📅 ${p.fecha} · ${p.hora} · ${escapeHtml(p.sede)}</div>
+      </div>
+    `;
+  };
+
   const fases = [
     { key: 'R32', label: 'R32',     info: '28-30 jun · 1-2 jul' },
     { key: 'OCT', label: 'Octavos', info: '4-7 jul' },
@@ -794,41 +881,59 @@ function renderMundialBracket() {
     { key: 'SEM', label: 'Semis',   info: '14-15 jul' },
     { key: 'FIN', label: '🏆 Final', info: '19 jul' },
   ];
-  cont.innerHTML = `
-    <div class="bracket-wrap">
+  const verticalHTML = `
+    <div class="bracket-vertical">
       <div class="bracket-board">
         ${fases.map(f => `
           <div class="bracket-col">
             <div class="bracket-col-title">${f.label}</div>
             <div class="bracket-stage-info">${f.info}</div>
-            ${ELIMINATORIAS.filter(p => p.fase === f.key).map(p => {
-              const eqA = resolverClave(p.clave_a);
-              const eqB = resolverClave(p.clave_b);
-              const renderTeam = (eq, claveOriginal) => {
-                if (!eq) return `<span class="bracket-flag"></span><span class="bracket-name"><span class="bracket-pending-team">${labelClave(claveOriginal)}</span></span>`;
-                const cls = eq.confirmado ? 'bracket-name confirmed' : 'bracket-name provisional';
-                const star = eq.confirmado ? ' <span class="bracket-conf">✓</span>' : '';
-                return `<span class="bracket-flag">${flag(eq.nombre)}</span><span class="${cls}">${escapeHtml(eq.nombre)}${star}</span>`;
-              };
-              const isFinal = f.key === 'FIN' ? ' final' : '';
-              return `
-                <div class="bracket-match pending${isFinal}">
-                  <div class="bracket-team">
-                    ${renderTeam(eqA, p.clave_a)}
-                    <span class="bracket-score">—</span>
-                  </div>
-                  <div class="bracket-team">
-                    ${renderTeam(eqB, p.clave_b)}
-                    <span class="bracket-score">—</span>
-                  </div>
-                  <div class="bracket-meta">📅 ${p.fecha} · ${p.hora} · ${escapeHtml(p.sede)}</div>
-                </div>
-              `;
-            }).join('')}
+            ${ELIMINATORIAS.filter(p => p.fase === f.key).map(p => renderMatch(p, f.key === 'FIN')).join('')}
           </div>
         `).join('')}
       </div>
     </div>
+  `;
+
+  const byFase = {
+    R32: ELIMINATORIAS.filter(p => p.fase === 'R32'),
+    OCT: ELIMINATORIAS.filter(p => p.fase === 'OCT'),
+    CUA: ELIMINATORIAS.filter(p => p.fase === 'CUA'),
+    SEM: ELIMINATORIAS.filter(p => p.fase === 'SEM'),
+    FIN: ELIMINATORIAS.filter(p => p.fase === 'FIN'),
+  };
+  const colHTML = (label, info, matches, isFinal) => `
+    <div class="bracket-col${isFinal ? ' bracket-col-final' : ''}">
+      <div class="bracket-col-title">${label}</div>
+      <div class="bracket-stage-info">${info}</div>
+      ${matches.map(p => renderMatch(p, isFinal)).join('')}
+    </div>
+  `;
+  const fin = byFase.FIN[0];
+  const symmetricHTML = `
+    <div class="bracket-symmetric">
+      <div class="bracket-half bracket-half-left">
+        ${colHTML('R32', '28-30 jun · 1-2 jul', byFase.R32.slice(0,8))}
+        ${colHTML('Octavos', '4-7 jul', byFase.OCT.slice(0,4))}
+        ${colHTML('Cuartos', '9-11 jul', byFase.CUA.slice(0,2))}
+        ${colHTML('Semis', '14-15 jul', byFase.SEM.slice(0,1))}
+      </div>
+      <div class="bracket-center">
+        <div class="bracket-trophy">🏆</div>
+        ${fin ? colHTML('Final', '19 jul', [fin], true) : ''}
+      </div>
+      <div class="bracket-half bracket-half-right">
+        ${colHTML('Semis', '14-15 jul', byFase.SEM.slice(1,2))}
+        ${colHTML('Cuartos', '9-11 jul', byFase.CUA.slice(2,4))}
+        ${colHTML('Octavos', '4-7 jul', byFase.OCT.slice(4,8))}
+        ${colHTML('R32', '28-30 jun · 1-2 jul', byFase.R32.slice(8,16))}
+      </div>
+    </div>
+  `;
+
+  cont.innerHTML = `
+    ${verticalHTML}
+    ${symmetricHTML}
     <div class="bracket-leyenda">
       <span><i style="background:#2E7D32"></i>Ya jugado</span>
       <span><i style="background:#F26522"></i>Próximo partido</span>
@@ -907,7 +1012,11 @@ function renderCapturarPartidos() {
   }
   cont.innerHTML = lista.map(p => {
     const hasResult = !!p.ganador_real;
-    const opts = [
+    const esKO = p.fase && p.fase !== 'grupos';
+    const opts = esKO ? [
+      { val: p.local, label: '🏠 ' + p.local },
+      { val: p.visitante, label: '✈️ ' + p.visitante },
+    ] : [
       { val: p.local, label: '🏠 ' + p.local },
       { val: 'Empate', label: '🤝 Empate' },
       { val: p.visitante, label: '✈️ ' + p.visitante },
