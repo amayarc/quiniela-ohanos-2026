@@ -1194,9 +1194,9 @@ main {
 .bracket-symmetric { display: none; }
 
 @media (min-width: 1000px) {
-  .bracket-vertical { display: none; }
+  .bracket-vertical { display: block; }
   .bracket-symmetric {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr auto 1fr;
     gap: 14px;
     align-items: stretch;
@@ -1290,11 +1290,12 @@ main {
   overflow-x: auto;
   padding-bottom: 8px;
 }
+.bracket-vertical { overflow-x: auto; padding-bottom: 8px; }
 .bracket-board {
   display: flex;
   gap: 14px;
   min-width: 1000px;
-  align-items: stretch;
+  align-items: flex-start;
 }
 .bracket-col {
   display: flex;
